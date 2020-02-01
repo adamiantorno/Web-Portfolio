@@ -1,0 +1,7 @@
+body{
+  background-color: #FFD700;
+}
+
+body, html  {
+  background-image: url(/img/download.jpg);
+}
