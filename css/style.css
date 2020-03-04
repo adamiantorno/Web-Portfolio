@@ -47,7 +47,7 @@
 }
 
 .bg1::after{
-  background-image: url(img/bg1.jpg);
+  background-image: url();
 }
 
 .bg2::after{
