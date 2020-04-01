@@ -1,3 +1,4 @@
-body {
-  background-image: url(img/background.png);
+.jumbotron{
+  background: no-repeat center right fixed url(img/background.jpg);
+  
 }
