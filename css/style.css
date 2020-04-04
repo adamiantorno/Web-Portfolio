@@ -1,3 +1,5 @@
-.jumbotron{
-  background: no-repeat center right fixed url(img/background.jpg);
+.name {
+  font-size: 50px;
+  line-height: 62px;
+  font-family: sans-serif;
 }
