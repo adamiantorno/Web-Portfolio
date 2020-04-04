@@ -3,3 +3,9 @@
   line-height: 62px;
   font-family: sans-serif;
 }
+
+.jumbotron {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/background.jpg);
+}
