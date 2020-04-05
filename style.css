@@ -3,19 +3,23 @@
   padding: 0;
 }
 
-.jumbotron{
-  margin: 0 auto;
-  width: 1000px;
+.jumbotron {
+  background: no-repeat fixed center url(img/naruto.jpg);
+  background-size: cover;
+  padding: 100%;
+
 }
 
-.name {
-  font-size: 50px;
-  line-height: 62px;
+.firstname {
   font-family: fantasy;
+  font-size: 100px;
+  color: white;
+  padding-left: 60%;
 }
 
-.naruto {
-  width: 300px;
-  height: 200px;
-  background-image: url(img/naruto.jpg);
+.lastname{
+  font-family: fantasy;
+  font-size: 100px;
+  color: white;
+  padding-left: 70%;
 }
