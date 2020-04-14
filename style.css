@@ -20,11 +20,11 @@ header .firstname {
   margin-top: -250px;
 }
 
-/*header, header::before {
+header, header::before {
   background: 50% 50% / cover;
 }
 
-/*header::before {
+header::before {
   bottom: 0;
   content: "";
   left: 0;
