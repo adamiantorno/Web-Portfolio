@@ -1,87 +1,51 @@
-html {height: 100%; overflow: hidden;}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-body {color: #fff; margin: 0; padding: 0; height: 100%}
-body {perspective: 1px;  transform-style: preserve-3d; overflow-y: scroll; overflow-x: hidden}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*== Navigation ==*/
 
 header {
-  box-sizing: border-box;
-  min-height: 100vh;
-  font-size: 3.5em;
-  text-shadow: 3px 6px 2px #e7e7e7;
-  padding: 30vw 0 5vw;
-  position: relative;
-  transform-style: inherit;
-  width: 100vw;
-  font-family: fantasy;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
 
 
-header .firstname {
-  margin-top: -250px;
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
 }
 
-header, header::before {
-  background: 50% 50% / cover;
+.nav_list {
+  padding-right: .7rem;
 }
 
-header::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
+.nav__item {
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+
+.nav__link {
+  padding: 5px;
+  margin: 50px;
+
+}
+
+.intro {
   background-image: url(img/adambackground.jpg);
   background-size: cover;
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
-
-
-
-/*
-.mainpage {
-  background-image: url(img/adambackground.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.firstname {
-  font-family: fantasy;
-  text-shadow: 3px 6px 3px #e7e7e7;
-  top: 20%;
-  left: 50%;
-  color: white;
-  font-size: 750%;
-  position: fixed;
-}
-
-.lastname {
-  font-family: fantasy;
-  text-shadow: 3px 6px 3px #e7e7e7;
-  top: 36%;
-  left: 60%;
-  color: white;
-  font-size: 750%;
-  position: fixed;
-}
-
-.ep {
-  font-family: sans-serif;
-  font-size: 25px;
-  font-weight: 100;
-  color: white;
-  position: relative;
-  bottom: 0%;
-  right: 100%;
-
-}
-
-.aboutme{
-  color: black;
+  height: 100vh;
 }
