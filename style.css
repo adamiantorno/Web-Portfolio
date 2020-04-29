@@ -28,6 +28,7 @@ section {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .nav__list {
@@ -111,4 +112,90 @@ section {
   line-height: 1;
 }
 
-/* === Profile Page === */
+/* === Profile === */
+
+.my-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.profile__text h2 {
+  text-transform: uppercase;
+  color: #5a4495;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.profile__text{
+  padding: 25px;
+  font-size: 1.3em;
+}
+
+.profile__text  p {
+  margin-bottom: 40px;
+}
+
+.profile__text strong{
+  color: #5a4495;
+}
+
+.profile__pic {
+  height: auto;
+  width: 100%;
+  background: #5a4495;
+}
+
+/* === Experience === */
+
+.my-experience {
+  background: #5a4495;
+}
+
+
+/* === Contact === */
+
+.my-contact {
+  background: #5a4495;
+  height: 40vh;
+}
+
+.contact__title {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.contact__socialicons {
+  text-align: center;
+  margin: 10px;
+}
+
+.contact__socialicons a {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 100%;
+}
+
+.contact__socialicons a:hover {
+  color: #5a4495;
+  background: white;
+}
+
+.grid__contact {
+  color: white;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 50px;
+}
