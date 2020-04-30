@@ -124,7 +124,7 @@ section {
   color: #5a4495;
   text-align: center;
   font-size: 2em;
-  padding: 10px;
+  margin-bottom: 25px;
 }
 
 .profile__text{
@@ -148,10 +148,31 @@ section {
 
 /* === Experience === */
 
-.my-experience {
-  background: #5a4495;
+.section__title {
+  text-transform: uppercase;
+  color: #5a4495;
+  margin: 15px 40px;
+  font-size: 2em;
+  text-align: center;
 }
 
+.experience__media {
+  display:  grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 60px;
+}
+
+.experience__container h3 {color: #5a4495;}
+.experience__container h4 {color: #7c68a8;}
+
+.experience__pic {
+  justify-self: end;
+}
+
+.experience__text__description {
+  max-width: 70%;
+}
 
 /* === Contact === */
 
