@@ -17,7 +17,7 @@ body {
 
 section {
   width: 100%;
-  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 /* === Navigation Bar=== */
@@ -64,6 +64,7 @@ section {
 .my-home {
   background-image: url("img/adambackground.jpg");
   background-size: cover;
+  height: 110vh;
 }
 
 .name {
@@ -84,8 +85,13 @@ section {
 /* === Profile === */
 
 .my-profile {
+  width: 100%;
+  height: 107vh;
+}
+
+.profile__container {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
 }
 
 .profile__text h2 {
@@ -116,9 +122,14 @@ section {
 }
 
 /* === Experience === */
+.section__splitter {
+  background: #cad6d6;
+  width: 100%;
+  height: 50px;
+}
 
 .my-experience {
-  height: 105vh;
+  height: 115vh;
 }
 
 .section__title {
