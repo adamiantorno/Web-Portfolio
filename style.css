@@ -85,6 +85,10 @@ section {
 
 
 /* === Profile === */
+.section__splitter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .my-profile {
   width: 100%;
@@ -125,9 +129,17 @@ section {
 
 /* === Experience === */
 .section__splitter {
-  background: #cad6d6;
-  width: 100%;
-  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px;
+}
+
+.split__purple {
+  background-color: #5a4495;
+}
+
+.split__white {
+  background-color: white;
 }
 
 .my-experience {
