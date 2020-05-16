@@ -176,9 +176,14 @@ section {
   max-width: 38%;
   height: auto;
   float: right;
-
-
 }
+
+.uwaftpicture {
+  max-width: 38%;
+  height: auto;
+  float: right;
+}
+
 
 /* === Contact === */
 
