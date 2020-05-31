@@ -3,9 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 
-*,
-*::after,
-*::before {
+*, *::after,*::before {
   box-sizing: border-box;
   margin: 0;
 }
@@ -25,34 +23,34 @@ section {
 /* === Navigation Bar=== */
 
 .nav-top {
-  width: 100%;
-  height: 50px;
   background: rgba(0, 0, 0, 0.4);
+  height: 50px;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 
 .nav__list {
   display: flex;
+  float: right;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 .nav__item {
   list-style: none;
   margin-left: 40px;
   position: relative;
-  }
+}
 
 .nav__item a {
-  display: block;
   color: white;
+  display: block;
+  line-height: 50px;
   padding: 0 25px;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 50px;
 }
 
 
@@ -70,13 +68,13 @@ section {
 }
 
 .name {
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px white;
   color: white;
   font-size: 5rem;
+  left: 9em;
+  text-shadow: 2px 2px 5px white;
+  text-transform: uppercase;
   position: relative;
   top: 2em;
-  left: 9em;
 }
 
 .lastname {
@@ -91,8 +89,8 @@ section {
 }
 
 .my-profile {
-  width: 100%;
   height: 107vh;
+  width: 100%;
 }
 
 .profile__container {
@@ -101,16 +99,16 @@ section {
 }
 
 .profile__text h2 {
-  text-transform: uppercase;
   color: #5a4495;
-  text-align: center;
   font-size: 2em;
   margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .profile__text{
-  padding: 25px;
   font-size: 1.3em;
+  padding: 25px;
 }
 
 .profile__text  p {
@@ -122,9 +120,9 @@ section {
 }
 
 .profile__pic {
+  background: #5a4495;
   height: auto;
   width: 100%;
-  background: #5a4495;
 }
 
 /* === Experience === */
@@ -147,17 +145,17 @@ section {
 }
 
 .section__title {
-  text-transform: uppercase;
   color: #5a4495;
-  margin: 15px 40px;
   font-size: 2em;
+  margin: 15px 40px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .experience__media {
+  column-gap: 15px;
   display:  grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
   row-gap: 60px;
 }
 
@@ -172,17 +170,12 @@ section {
   max-width: 70%;
 }
 
-.prefectpicture {
-  max-width: 38%;
-  height: auto;
+.prefectpicture, .uwaftpicture {
   float: right;
+  height: auto;
+  max-width: 38%;
 }
 
-.uwaftpicture {
-  max-width: 38%;
-  height: auto;
-  float: right;
-}
 
 
 /* === Contact === */
@@ -193,29 +186,29 @@ section {
 }
 
 .contact__title {
-  text-transform: uppercase;
   color: white;
-  text-align: center;
   font-size: 2em;
   padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .contact__socialicons {
-  text-align: center;
   margin: 10px;
+  text-align: center;
 }
 
 .contact__socialicons a {
   background: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  color: #ffffff;
   display: inline-block;
+  font-size: 2.5rem;
   height: 5rem;
   width: 5rem;
   margin-right: 1rem;
-  font-size: 2.5rem;
-  line-height: 5rem;
   text-align: center;
-  color: #ffffff;
-  border-radius: 100%;
+  line-height: 5rem;
 }
 
 .contact__socialicons a:hover {
@@ -225,9 +218,9 @@ section {
 
 .grid__contact {
   color: white;
-  font-size: 20px;
   display: grid;
+  font-size: 20px;
   grid-template-columns: 1fr 1fr;
-  text-align: center;
   padding-top: 50px;
+  text-align: center;
 }
