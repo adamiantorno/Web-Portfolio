@@ -21,7 +21,53 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-/* === Navigation Bar=== */
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  padding-right: 0;
+}
+
+.topnav a {
+  float: right;
+  display: none;
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.topnav a:hover {
+  color: #A5C0F3;
+}
+
+.topnav .active {
+  color: #A5C0F3;
+}
+
+.topnav .icon {
+  display: block;
+  float: right;
+  color: #A5C0F3;
+}
+
+.responsive {
+  position: relative;
+}
+
+.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+/* === Navigation Bar===
 
 .nav-top {
   background: rgba(0, 0, 0, 0.4);
@@ -224,12 +270,22 @@ body{
 /* ==============================
 =================================
 
+TABLET DISPLAY
+
+=================================
+===============================*/
+@media only screen and (min-Width: 768px){
+
+
+}
+
+/* ==============================
+=================================
+
 LAPTOP DISPLAY
 
 =================================
 ===============================*/
-
-
 @media only screen and (min-Width: 1024px){
 
 /* === General Style & Settings === */
@@ -424,11 +480,4 @@ section {
   text-align: center;
 }
 
-/* ==============================
-=================================
-
-IPHONE MODE (Width <= 320
-
-=================================
-===============================*/
 }
