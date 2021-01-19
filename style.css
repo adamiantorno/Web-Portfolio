@@ -15,29 +15,61 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.nav__top {
-  background: rgba(0, 0, 0, 0.4);
-  height: 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+
+/* === General === */
+
+h2 {
+  color: #5a4495; 
+  font-size: 3em;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.nav__list {
+.section-border {
+  border-top: 2px solid #7c68a8;
+  margin: 0px 300px;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+
+/* === Nav Bar === */
+
+.nav__top {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 50px;  
+  width: 100%;
+  z-index: 1;
+  
+}
+
+#wide-nav {
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  z-index: 12;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-list {
   display: flex;
   float: right;
   margin: 0;
   padding: 0;
 }
 
-.nav__item {
+.nav-item {
   list-style: none;
-  margin-left: 0px;
   position: relative;
 }
 
-.nav__item a {
+.nav-item a {
   color: white;
   display: block;
   line-height: 50px;
@@ -46,55 +78,128 @@ body{
   text-transform: uppercase;
 }
 
-
-.nav__top a:hover {
+.nav-item a:hover {
   background: rgba(0, 0, 0, 0.5);
-  transition: all ease-in-out 200ms;
+  transition: all ease-in-out 300ms;
 }
 
-/* General */
-h2 {
-  color: #5a4495;
-  font-size: 3em;
-  margin-bottom: 25px;
-  text-align: center;
-  text-transform: uppercase;
+#menu-nav {
+  display: none;
+}
+
+#but-hamburger {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  padding: 10px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #fff;
+  z-index: 12;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-device-width: 320px) and (max-device-width : 630px) {
+  #menu-nav {
+    display: block
+  }
+
+  #sidebar-nav-list {
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 50px 10px;
+    width: (75vw, 400px);
+    height: 100vh;
+    outline: 0px;
+    background: rgba(0, 0, 0, 0.75);
+  } 
+
+  #sidebar-nav-list nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+  }
+
+  #wide-nav {
+    display: none;
+  }
 }
 
 
 /* === Landing Page=== */
 
 .my-home {
-  background-image: url("img/adambackground.jpg");
-  background-size: cover;
-  height: 110vh;
+  height: 100vh;
+  background-color: #5a4495;
+  width: 100%;
+}
+
+#home-wallpaper {
+  max-height: 100%;
 }
 
 .name {
   color: white;
   font-size: 5rem;
-  left: 11em;
+  top: 175px;
+  left: 700px;
   text-shadow: 2px 2px 5px white;
   text-transform: uppercase;
   position: absolute;
-  top: 3em;
 }
 
 .lastname {
   margin-left: 0.5em;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-device-width: 320px) and (max-device-width : 630px) {
+  #home-wallpaper {
+    height: 62%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .name {
+    font-size: 2em;
+    top: 40px;
+    left: 25px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #home-wallpaper {
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .name {
+    font-size: 3.5em;
+    top: 80px;
+    left: 225px;
+  }
+}
+
 
 /* === Profile === */
 
-.my-profile {
-  height: 107vh;
+.my-profile, .my-experience {
   width: 100%;
+  padding: 25px 175px;
 }
 
-.profile-container {
-  padding: 25px 450px;
-}
 
 .page-title {
   margin-top: 20px;
@@ -113,12 +218,18 @@ h2 {
 
 .profile-text  p{
   margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.pic-selfie-wrapper img {
+  height: 350px;
+  border-radius: 50%;
 }
 
 .pic-selfie-wrapper {
   height: 350px;
   width: 350px;
-  box-shadow: 12px 12px 2px #5a4495;
+  box-shadow: 8px 8px 2px #5a4495;
   border-radius: 50%;
 }
 
@@ -140,6 +251,10 @@ h2 {
   list-style: none;
 }
 
+.mobile__skills {
+  display: none;
+}
+
 .skill-header {
   color: #5a4495;
   font-size: 2em;
@@ -151,11 +266,83 @@ h2 {
   padding: 7px 0;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-device-width: 320px) and (max-device-width : 630px) {
+  .my-profile, .my-experience {
+    padding: 15px 12px;
+  }
+
+  .grid__profile {
+    margin: 0;
+    display: block;
+  }
+
+  .profile-text {
+    font-size: 1em;
+  }
+
+  .profile-text p {
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pic-selfie-wrapper img {
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .pic-selfie-wrapper {
+    height: 200px;
+    width: 200px;
+  }
+
+  .grid__skills {
+    display: none;
+  }
+
+  .mobile__skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skill-split {
+    border-top: 2px solid #7c68a8;
+    margin: 10px 75px;
+
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .my-profile, .my-experience {
+    padding: 15px 20px;
+  }
+
+  .grid__profile {
+    margin-bottom: 10px;
+  }
+
+  .pic-selfie-wrapper img {
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .pic-selfie-wrapper {
+    height: 250px;
+    width: 250px;
+  }
+
+}
 
 /* === Experience === */
 
 .my-experience {
-  height: 115vh;
+  width: 100%;
 }
 
 .experience-wrapper {
@@ -169,6 +356,7 @@ h2 {
 .experience-text h4 {color: #7c68a8;}
 
 .experience-pic {
+  display: flex;
   justify-self: end;
 }
 
@@ -176,22 +364,56 @@ h2 {
   max-width: 70%;
 }
 
-.prefectpicture, .uwaftpicture, .flipicture {
+.experience-description p {
+  line-height: 1.25;
+}
+
+.xp {
   float: right;
   height: auto;
   max-width: 38%;
 }
 
-.prefectpicture {
-  max-width: 30%;
+@media screen and (min-device-width: 320px) and (max-device-width : 630px) {
+  .experience-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+  }
+
+  .experience-description {
+    max-width: 95%;
+  }
+
+  .xp {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    float: left;
+    max-width: 60%;
+  }
 }
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .experience-wrapper {
+    grid-template-columns: 1fr 2fr;
+    row-gap: 20px;
+  }
+  
+  .experience-description {
+    max-width: 80%;
+  }
 
+  .xp {
+    max-width: 90%; 
+    align-self: center;
+  }
+
+
+}
 /* === Contact === */
 
 .my-contact {
   background: #5a4495;
-  height: 30vh;
 }
 
 .contact-title {
@@ -230,7 +452,14 @@ h2 {
   display: grid;
   font-size: 20px;
   grid-template-columns: 1fr 1fr;
-  padding-top: 50px;
+  padding: 50px 0px 20px 0px;
   text-align: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+  .grid__contact {
+    font-size: 12px;
+  }
 }
 

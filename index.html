@@ -3,8 +3,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <title>Adam 'AI' Iantorno</title>
 
     <!--favicon-->
@@ -12,6 +13,7 @@
 
     <!--Stylesheet & Bootstrap-->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
@@ -23,26 +25,47 @@
     <!-- nav bar -->
     <header>
       <nav class="nav__top">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home">Home</a></li>
-          <li class="nav__item"><a href="#profile">Profile</a></li>
-          <li class="nav__item"><a href="#experience">Experience</a></li>
-          <!-- <li class="nav__item"><a href="#projects">Projects</a></li> -->
-          <li class="nav__item"><a href="#contact">Contact</a></li>
-        </ul>
+        <div id="wide-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#profile">Profile</a></li>
+            <li class="nav-item"><a href="#experience">Experience</a></li>
+            <!-- <li class="nav__item"><a href="#projects">Projects</a></li> -->
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div id="menu-nav">
+          <div>
+            <button id="but-hamburger" onclick="display_menu()">
+              <div><i class="fas fa-bars fa-3x"></i></div>
+            </button>
+            <aside id="sidebar-nav-list" aria-hidden="true">
+              <nav>
+                <ul>
+                  <li class="nav-item"><a href="#home">Home</a></li>
+                  <li class="nav-item"><a href="#profile">Profile</a></li>
+                  <li class="nav-item"><a href="#experience">Experience</a></li>
+                  <!-- <li class="nav__item"><a href="#projects">Projects</a></li> -->
+                  <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+        </div>
       </nav>
     </header>
 
     <!--Homepage-->
     <section class="my-home" id=home>
-      <div class="container">
+      <img id="home-wallpaper" src="img/adamimg.jpg" alt="">
         <div class="name">
           <h1 class="firstname">Adam</h1>
           <h1 class="lastname">Iantorno</h1>
         </div>
-      </div>
     </section>
 
+
+    <!-- Profile -->
     <section class="my-profile" id="profile">
       <div class="profile-container">
         <h2 class="page-title">ABOUT ME</h2>
@@ -52,8 +75,8 @@
               Hi, I'm Adam! 
             </p>
             <p>
-              I am a second year student currently studying mechanical engineering at the University of Waterloo, Canada. 
-              I am also a self-taught programmer with a passion for learning and expanding my skillset. My goal is to build sustainable 
+              I'm a second year student currently studying mechanical engineering at the University of Waterloo, Canada. 
+              Outside of school I'm a self-taught programmer with a passion for learning and expanding my skillset. My goal is to build sustainable 
               and practical products that push the limits of technology and design.   
             </p>
             <p>
@@ -61,8 +84,8 @@
             </p>
           </div>
           <div class="profile-pic">
-            <div class="pic pic-selfie-wrapper">
-              <img src="img/profilepic.jpg" alt="" style="border-radius: 50%; height: 350px;">
+            <div class="pic-selfie-wrapper" aria-hidden="true">
+              <img src="img/profilepic.jpg" alt="Selfie" aria-hidden="true">
             </div>
           </div>
         </div>
@@ -97,9 +120,30 @@
               </ul>
             </li>
           </ul>
+          <ul class="mobile__skills">
+            <li class="skill-header">DESIGN</li>
+            <li class="skill">AutoCAD</li>
+            <li class="skill">SolidWorks</li>
+            <li class="skill">Adobe Creative Suite</li>
+            <li><hr class="skill-split"></li>
+            <li class="skill-header">PROGRAMMING</li>
+            <li class="skill">Python</li>
+            <li class="skill">Django</li>
+            <li class="skill">HTML & CSS</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">C++</li>
+            <li><hr class="skill-split"></li>
+            <li class="skill-header">OTHER</li>
+            <li class="skill">Git</li>
+            <li class="skill">Microsoft Office</li>
+            <li class="skill">REST APIs</li>
+            <li class="skill">Visual Studio</li>
+          </ul>
         </div>
       </div>
     </section>
+    
+    <hr class="section-border">
 
     <!--Experience-->
     <section class="my-experience" id="experience">
@@ -108,7 +152,7 @@
         <div class="experience-wrapper">
 
           <div class="experience-pic pic-flipp">
-            <img class="flipicture" src="img/experience/flipp.png" alt="">
+            <img class="xp flipicture" src="img/experience/flipp.png" alt="">
           </div>
           <div class="experience-text text-flipp">
             <h3>Flipp Inc</h3>
@@ -124,7 +168,7 @@
           </div>
 
           <div class="experience-pic pic-416">
-            <img class="fourpicture" src="img/experience/416automation.png" alt="416 Automation logo">
+            <img class="xp fourpicture" src="img/experience/416picture.JPG" alt="416 Automation logo">
           </div>
           <div class="experience-text text-416">
             <h3>416 Automation</h3>
@@ -140,7 +184,7 @@
           </div>
 
           <div class="experience-pic pic-uwaft">
-            <img class="uwaftpicture" src="img/experience/uwaftpicture.png" alt="UWAFT logo">
+            <img class="xp uwaftpicture" src="img/experience/uwaftpicture.jpg" alt="UWAFT logo">
           </div>
           <div class="experience-text text-uwaft">
             <h3>University of Waterloo Alternative Fuels Team (UWAFT)</h3>
@@ -155,7 +199,7 @@
           </div>
 
           <div class="experience-pic pic-prefect">
-            <img class="prefectpicture" src="img/experience/prefectpicture.jpg" alt="Appleby College Group Picture">
+            <img class="xp prefectpicture" src="img/experience/prefectpicture.jpg" alt="Appleby College Group Picture">
           </div>
           <div class="experience-text text-prefect">
             <h3>Appleby College</h3>
@@ -178,9 +222,9 @@
     <section class="my-contact" id="contact">
       <h2 class="contact-title">Contact</h1>
       <div class="contact-socialicons">
-        <a href="https://www.linkedin.com/in/adam-iantorno"><i class="fab fa-linkedin-in"></i></a>
-        <a href="files/AdamIantornoResume.pdf"><i class="far fa-file"></i></a>
-        <a href="https://www.github/adamiantorno"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adam-iantorno" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="files/AdamIantornoResume.pdf" aria-label="Resume"><i class="far fa-file"></i></a>
+        <a href="https://www.github/adamiantorno" aria-label="GitHub"><i class="fab fa-github"></i></a>
       </div>
 
       <div class="grid__contact">
