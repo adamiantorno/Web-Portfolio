@@ -10,39 +10,28 @@
     <!--favicon-->
     <link rel="icon" href="img/favicon.ico" type="img/x-icon">
 
-    <!--Stylesheet-->
+    <!--Stylesheet & Bootstrap-->
     <link rel="stylesheet" href="style.css">
-
-    <script type="main.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/456fd643ba.js" crossorigin="anonymous"></script>
 
   </head>
   <body>
-
-    <!--
+    <!-- nav bar -->
     <header>
-      <nav class="nav-top">
+      <nav class="nav__top">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home">Home</a></li>
           <li class="nav__item"><a href="#profile">Profile</a></li>
           <li class="nav__item"><a href="#experience">Experience</a></li>
+          <!-- <li class="nav__item"><a href="#projects">Projects</a></li> -->
           <li class="nav__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>Navigation-->
-
-    <div class="topnav responsive" id="myTopnav">
-        <a href="#home">Home</a>
-        <a href="#profile">Profile</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" id="menu">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    </header>
 
     <!--Homepage-->
     <section class="my-home" id=home>
@@ -51,99 +40,144 @@
           <h1 class="firstname">Adam</h1>
           <h1 class="lastname">Iantorno</h1>
         </div>
-
-        <!--
-        <div class="social_icons">
-          <a href="https://www.linkedin.com/in/adam-iantorno"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.github/adamiantorno"><i class="fab fa-github"></i></a>
-        </div>-->
-
       </div>
     </section>
 
-    <!--Profile-->
-    <section class="my-profile" id=profile>
-      <div class="section__splitter">
-        <div class="split__white"></div>
-        <div class="split__purple"></div>
-      </div>
-      <div class="profile__container">
-        <div class="profile__text profile__text--aboutme">
-          <h2>About me</h2>
-          <p>I am a first-year mechanical engineering student at the University of Waterloo, Canada.
-            I am also a self-taught programmer with a passion for learning and expanding my skillset.
-             I have great experience working in mutlidisciplnary teams and
-            being a resourceful self-starter worker who communicates effectively with others.
-          </p>
-          <!--I am currently working to improve my UX/UI design skills and build student portfolio
-          websites for other students.-->
-          <p>I am currently searching for a 4-month internship position from September to December 2020.</p>
+    <section class="my-profile" id="profile">
+      <div class="profile-container">
+        <h2 class="page-title">ABOUT ME</h2>
+        <div class="grid__profile">
+          <div class="profile-text">
+            <p>
+              Hi, I'm Adam! 
+            </p>
+            <p>
+              I am a second year student currently studying mechanical engineering at the University of Waterloo, Canada. 
+              I am also a self-taught programmer with a passion for learning and expanding my skillset. My goal is to build sustainable 
+              and practical products that push the limits of technology and design.   
+            </p>
+            <p>
+              I am currently seeking a 4-month intership position for Summer 2021.
+            </p>
+          </div>
+          <div class="profile-pic">
+            <div class="pic pic-selfie-wrapper">
+              <img src="img/profilepic.jpg" alt="" style="border-radius: 50%; height: 350px;">
+            </div>
+          </div>
         </div>
-        <div class="profile__pic profile__pic--aboutme">
-          <!--img src="img/sideprofile.jpg" alt="Side profile of adam"-->
-        </div>
-        <div class="profile__pic profile__pic--skills">
-          <!--img src="img/programming.jpg" alt="Programming picture"-->
-        </div>
-        <div class="profile__text profile__text--skills">
-          <h2>Skills</h2>
-          <p><strong>Programming:</strong> HTML & CSS, C++, Python (Pandas & NumPy)</p>
-          <p><strong>Design:</strong> AutoCAD, Solidworks, Siemens NX, Adope Creative Studio</p>
+        <div class="profile-skills">
+          <h3>Here are some technologies I have experience working with:</h3>
+          <ul class="grid__skills">
+            <li class="skill-header">DESIGN</li>
+            <li class="skill-header">PROGRAMMING</li>
+            <li class="skill-header">OTHER</li>
+            <li class="skill-list">
+              <ul>
+                <li class="skill">AutoCAD</li>
+                <li class="skill">SolidWorks</li>
+                <li class="skill">Adobe Creative Suite</li>
+              </ul>
+            </li>
+            <li class="skill-list">
+              <ul>
+                <li class="skill">Python</li>
+                <li class="skill">Django</li>
+                <li class="skill">HTML & CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">C++</li>
+              </ul>
+            </li>
+            <li class="skill-list">
+              <ul>
+                <li class="skill">Git</li>
+                <li class="skill">Microsoft Office</li>
+                <li class="skill">REST APIs</li>
+                <li class="skill">Visual Studio</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!--Experience-->
-    <section class="my-experience" id=experience>
-      <div class="section__splitter">
-        <div class="split__purple"></div>
-        <div class="split__white"></div>
-      </div>
-      <div class="section__title">
-        <h2>My Experience</h2>
-      </div>
-      <div class="experience__container">
-        <div class="experience__media experience__media--416">
+    <section class="my-experience" id="experience">
+      <div class="experience-container">
+        <h2 class="page-title">Experience</h2>
+        <div class="experience-wrapper">
 
-          <div class="experience__pic experience__pic--416">
-            <img class="fourpicture" src="img/416automation.png" alt="416 Automation logo">
+          <div class="experience-pic pic-flipp">
+            <img class="flipicture" src="img/experience/flipp.png" alt="">
           </div>
-          <div class="experience__text experience__text--416">
+          <div class="experience-text text-flipp">
+            <h3>Flipp Inc</h3>
+            <h4>Operations Coordinator, September 2020 - December 2020</h4>
+            <div class="experience-description">
+              <p>At Flipp, I developped solutions for reducing error rates 
+                in the flyer digitilization process. I was able to implement a 
+                Javascript algorithm that would find and correct common prefix
+                errors. I also helped create a data manipulation procedure in 
+                Google sheets which increase quality assurance speed for my coworkers.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-pic pic-416">
+            <img class="fourpicture" src="img/experience/416automation.png" alt="416 Automation logo">
+          </div>
+          <div class="experience-text text-416">
             <h3>416 Automation</h3>
             <h4>Engineering Intern, January 2020 - April 2020</h4>
-            <div class="experience__text__description">
-              <p>I was responsible for operating, troubleshooting, and finalizing the company’s ultrasonic liftgate leak testers before they were shipped to clients. I debugged and maintained python data analysis scripts for the leak tester data. My goal was to collected thousands of data units and run them through the scripts to configure transmitter-receiver pairings and set their limits so that they can successfully detect leaks in a liftgate.</p>
+            <div class="experience-description">
+              <p>I was responsible for operating, troubleshooting, and finalizing the company’s 
+                ultrasonic liftgate leak testers before they were shipped to clients. I debugged 
+                and maintained python data analysis scripts for the leak tester data. My goal was to 
+                collected thousands of data units and run them through the scripts to configure 
+                transmitter-receiver pairings and set their limits so that they can successfully detect 
+                leaks in a liftgate.</p>
             </div>
           </div>
 
-          <div class="experience__pic experience__pic--uwaft">
-            <!--img class="uwaftpicture" src="img/uwaftpicture.png" alt="UWAFT logo"-->
+          <div class="experience-pic pic-uwaft">
+            <img class="uwaftpicture" src="img/experience/uwaftpicture.png" alt="UWAFT logo">
           </div>
-          <div class="experience__text experience__text--uwaft">
+          <div class="experience-text text-uwaft">
             <h3>University of Waterloo Alternative Fuels Team (UWAFT)</h3>
             <h4>CAVs Subteam Safety Lead and Sensor Diagnostic Member, Since Fall 2019</h4>
-            <div class="experience__text__description">
-              <p>I perform several different analysis such as DFMEA and SEFA throughout the terms and assist with testing for the CAVs team. As safety lead, I am to. As a Sensor Diagnostics member, I am identifying sensor error messages, specifying the appropriate range on their values and implementing those ranges with C++ in a ROS Linux environment. </p>
+            <div class="experience-description">
+              <p>I perform several different analysis such as DFMEA and SEFA throughout the 
+                terms and assist with testing for the CAVs team. As safety lead, I am to. As a 
+                Sensor Diagnostics member, I am identifying sensor error messages, specifying the
+                 appropriate range on their values and implementing those ranges with C++ in a
+                  ROS Linux environment. </p>
             </div>
           </div>
 
-          <div class="experience__pic experience__pic--prefect">
-            <!--img class="prefectpicture" src="img/prefectpicture.jpg" alt="Appleby College Group Picture"-->
+          <div class="experience-pic pic-prefect">
+            <img class="prefectpicture" src="img/experience/prefectpicture.jpg" alt="Appleby College Group Picture">
           </div>
-          <div class="experience__text experience__text--prefect">
+          <div class="experience-text text-prefect">
             <h3>Appleby College</h3>
             <h4>Appleby College Prefect, August 2018 - June 2019</h4>
-            <div class="experience__text__description">
-              <p>A head of student leadership and positive role model for the student body. I collaborated with other school prefects to organize community-wide events and run weekly all-school assemblies – with an overarching goal to promote student well-being and unity. I ran weekly meeting with younger students giving lessons on leadership and communication.</p>
+            <div class="experience-description">
+              <p>A head of student leadership and positive role model for the student body. 
+                I collaborated with other school prefects to organize community-wide events
+                 and run weekly all-school assemblies – with an overarching goal to promote 
+                 student well-being and unity. I ran weekly meeting with younger students 
+                 giving lessons on leadership and communication.</p>
             </div>
           </div>
 
+        </div>
       </div>
+
     </section>
+
     <!--Contact-->
     <section class="my-contact" id="contact">
-      <h2 class="contact__title">Contact</h1>
-      <div class="contact__socialicons">
+      <h2 class="contact-title">Contact</h1>
+      <div class="contact-socialicons">
         <a href="https://www.linkedin.com/in/adam-iantorno"><i class="fab fa-linkedin-in"></i></a>
         <a href="files/AdamIantornoResume.pdf"><i class="far fa-file"></i></a>
         <a href="https://www.github/adamiantorno"><i class="fab fa-github"></i></a>
