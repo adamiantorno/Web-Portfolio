@@ -187,9 +187,10 @@ section {
 
   .name {
     font-size: 3em;
-    top: 250px;
-    left: 350px;
+    top: 75px;
+    left: 200px;
   }
+
 }
 
 
@@ -355,10 +356,7 @@ section {
 .experience-text h3 {color: #5a4495;}
 .experience-text h4 {color: #7c68a8;}
 
-.experience-pic {
-  display: flex;
-  justify-self: end;
-}
+
 
 .experience-description {
   max-width: 70%;
@@ -380,6 +378,11 @@ section {
     row-gap: 0px;
   }
 
+  .experience-pic {
+    display: flex;
+    justify-self: end;
+  }
+
   .experience-description {
     max-width: 95%;
   }
@@ -397,6 +400,11 @@ section {
   .experience-wrapper {
     grid-template-columns: 1fr 2fr;
     row-gap: 20px;
+  }
+
+  .experience-pic {
+    display: flex;
+    justify-self: end;
   }
   
   .experience-description {
