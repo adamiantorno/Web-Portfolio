@@ -1,20 +1,15 @@
 {
   "name": "web-portfolio",
-  "homepage": "https://adamiantorno.ca",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://adamiantorno.ca",
   "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@fontsource/roboto": "^4.5.7",
-    "@mui/icons-material": "^5.8.3",
-    "@mui/material": "^5.8.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "install": "^0.13.0",
-    "npm": "^8.12.1",
+    "bootstrap": "^5.1.3",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -22,11 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
