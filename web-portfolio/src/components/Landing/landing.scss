@@ -2,8 +2,35 @@
 
 .home-section {
     position: relative;
-    max-height: 100%;
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(100, 100, 100, 0)), url(../../assets/imgs/adambackground.jpg);
-    
+    height: 100%;
+    background-image: $background-grad, url(../../assets/imgs/adambackground.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 
+.home-content {
+    text-align: left;
+    color: white;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.Typewriter__wrapper {
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px white;
+    text-transform: uppercase;
+}
+
+.name .Typewriter__wrapper {
+    text-shadow: 2px 2px 5px white;
+    text-transform: uppercase;
+}
+
+.Typewriter__cursor {
+    font-size: 2.2em;
 }

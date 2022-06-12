@@ -12,9 +12,8 @@ export default function Landing() {
         <Container fluid className="home-content">
           <Row>
             <Col>
-              <h1>Hi!</h1>
+              <h1 className='name'>Hi! I'm,</h1>
               <div>
-                <h2>I'm</h2>
                 <Typewriter
                   options={{
                     strings: APP_STRINGS.adjectives,
