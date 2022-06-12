@@ -1,22 +1,33 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Typewriter from 'typewriter-effect';
+
+import APP_STRINGS from '../../assets/scripts';
+import './landing.scss';
 
 export default function Landing() {
   return (
-    <section>
-      <Container fluid>
-        <Row>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col>Hello</Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-        </Row>
+    <section id="home">
+      <Container fluid className="home-section">
+        <Container fluid className="home-content">
+          <Row>
+            <Col>
+              <h1>Hi!</h1>
+              <div>
+                <h2>I'm</h2>
+                <Typewriter
+                  options={{
+                    strings: APP_STRINGS.adjectives,
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </section>
-  )
+  );
 }
