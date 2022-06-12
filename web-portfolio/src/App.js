@@ -9,6 +9,7 @@ import Iconbar from './components/Iconbar';
 
 
 import './App.css';
+import './scss/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path='/' element={<Landing />} />
           <Route path='/experience' element={<Experience />} />
