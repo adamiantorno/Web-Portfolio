@@ -5,7 +5,6 @@ import Projects from './components/Projects/Projects';
 import Blog from './components/Blog/Blog';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Iconbar from './components/Iconbar';
 
 
 import './App.css';
@@ -24,7 +23,6 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/blog' element={<Blog />} />
         </Routes>
-        <Iconbar />
         <Footer />
       </div>
     </Router>

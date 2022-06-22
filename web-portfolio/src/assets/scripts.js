@@ -1,5 +1,6 @@
 const APP_SCRIPTS = {
-    adjectives: ['Adam Iantorno', 'an Engineering Student', 'an Innovator', 'a Self-Starter', 'Curious']
+    adjectives: ['Engineering Student', 'Innovator', 'Self-Starter'],
+    email: 'aiantorn@uwaterloo.ca'
 };
 
 export default APP_SCRIPTS;

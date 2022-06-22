@@ -1,16 +1,29 @@
-import React from 'react';
-import { NavLink} from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
+import APP_STRINGS from '../assets/scripts';
+
 export default function Header() {
+  const [navColor, updateNavbar] = useState(false);
+
+  function scrolling() {
+    if (window.scrollY >= 10) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrolling);
+
   return (
     <Navbar 
-        bg='dark'
-        variant='dark'
         fixed='top'
         expand='md'
+        className={navColor ? "scrollbar" : "navbar"}
     >
       <Container>
         <Navbar.Brand>ADAM IANTORNO</Navbar.Brand>
