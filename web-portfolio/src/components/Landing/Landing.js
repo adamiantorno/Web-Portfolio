@@ -3,18 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
 
 import APP_STRINGS from '../../assets/scripts';
-import './landing.scss';
+
 
 export default function Landing() {
   return (
     <section id="home">
-      <Container fluid className="home-section">
-        <Container fluid className="home-content">
+      <Container>
+        <Container>
           <Row>
             <Col>
-              <h1 className='name'>Hi! I'm,</h1>
+              <h1>Adam</h1>
               <div>
-                <Typewriter
+              <Typewriter
                   options={{
                     strings: APP_STRINGS.adjectives,
                     autoStart: true,
@@ -26,6 +26,20 @@ export default function Landing() {
             </Col>
           </Row>
         </Container>
+      </Container>
+      <Container>
+        <Row>
+          <Col>
+            <h2>About Me</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p></p>
+            <p></p>
+            <p></p>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
