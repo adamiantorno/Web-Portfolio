@@ -4,8 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-import APP_STRINGS from '../assets/scripts';
-
 export default function Header() {
   const [navColor, updateNavbar] = useState(false);
 
@@ -50,11 +48,11 @@ export default function Header() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link as={ NavLink } to='/blog'>
                 Blog
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link as={ NavLink } to='/resume'>
