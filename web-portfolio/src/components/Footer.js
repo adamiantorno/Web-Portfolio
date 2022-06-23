@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import {
   GrGithub,
-  GrLinkedin,
-  GrDocumentPdf
+  GrLinkedin
 } from "react-icons/gr"
 
 import APP_STRINGS from '../assets/scripts';
@@ -27,11 +26,6 @@ export default function Footer() {
             <li>
               <a href='https://www.linkedin.com/in/adamiantorno'>
                 <GrLinkedin />
-              </a>
-            </li>
-            <li>
-              <a href=''>
-                <GrDocumentPdf />
               </a>
             </li>
           </ul>
