@@ -5,7 +5,6 @@ import Filter from './Filter';
 
 import ProjData from '../../assets/projectdata';
 
-const all_genres = 0;
 const categories = [
   {
     "id": 0,
