@@ -5,7 +5,7 @@ import {
   GrLinkedin
 } from "react-icons/gr"
 
-import APP_STRINGS from '../assets/scripts';
+import APP_STRINGS from '../assets/strings';
 
 export default function Footer() {
   return (
