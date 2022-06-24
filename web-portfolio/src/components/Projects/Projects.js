@@ -1,76 +1,59 @@
-import React from 'react';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
+import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from './ProjectCard';
+import Filter from './Filter';
 
-import APP_SCRIPTS from '../../assets/scripts';
+import ProjData from '../../assets/projectdata';
+
+const all_genres = 0;
+const categories = [
+  {
+    "id": 0,
+    "name": "All"
+  },
+  {
+    "id": 10,
+    "name": "Mechanical"
+  },
+  {
+    "id": 20,
+    "name": "Electrical"
+  },
+  {
+    "id": 30,
+    "name": "Software"
+  }
+]
 
 export default function Projects() {
+
+  const [project, setProject] = useState(ProjData);
+  const [filtered, setFiltered] = useState([]);
+  const [activeGenre, setActiveGenre] = useState(0);
+  
   return (
     <section>
       <Container>
-        <Container>
+        <Container fluid>
           <Row>
             <Col>
               <h2>What's Cooking in the Kitchen...</h2>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <ul>
-                <li><Button>Mechanical</Button></li>
-                <li><Button>Electrical</Button></li>
-                <li><Button>Software</Button></li>
-                <li><Button>Other</Button></li>
-              </ul>
-            </Col>
+            <Filter 
+              categories={categories} 
+              projects={project} 
+              filtered={filtered} 
+              setFiltered={setFiltered}
+              activeGenre={activeGenre}  
+              setActiveGenre={setActiveGenre}
+            />
           </Row>
           <Row>
-            <Col>
-              <ProjectCard 
-                title="Hardware In Loop Testing Fixture"
-                description={APP_SCRIPTS.project_hlf_desc}
-              />
-            </Col>
-            <Col>
-              <ProjectCard 
-                title="Arduino Enclosure"
-                description={APP_SCRIPTS.project_ard_desc}
-              />
-            </Col>
-            <Col>
-              <ProjectCard 
-                title="Quadcopter Powered by Arduino"
-                description={APP_SCRIPTS.project_quad_desc}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <ProjectCard 
-                title="Sheet Metal Brackets"
-                description={APP_SCRIPTS.project_sht_desc}
-              />
-            </Col>
-            <Col>
-              <ProjectCard 
-                title="Carbon Greenfoot Tracker"
-                description={APP_SCRIPTS.project_carb_desc}
-              />
-            </Col>
-            <Col>
-              <ProjectCard 
-                title="Sensor Diagnostics Algorithm"
-                description={APP_SCRIPTS.project_sens_desc}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <ProjectCard 
-                title="This Website"
-                description={APP_SCRIPTS.project_web_desc}
-              />
-            </Col>
+            {filtered.map((item) => {
+              return <ProjectCard item={item} />;
+            })}
           </Row>
         </Container>
       </Container>

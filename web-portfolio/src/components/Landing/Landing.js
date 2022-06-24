@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
+import APP_STRINGS from '../../assets/strings';
 
-import APP_STRINGS from '../../assets/scripts';
+import APP_SCRIPTS from '../../assets/strings';
 
 
 export default function Landing() {
@@ -16,7 +17,7 @@ export default function Landing() {
               <div>
               <Typewriter
                   options={{
-                    strings: APP_STRINGS.adjectives,
+                    strings: APP_SCRIPTS.adjectives,
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,
@@ -35,9 +36,8 @@ export default function Landing() {
         </Row>
         <Row>
           <Col>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>{APP_STRINGS.about1}</p>
+            <p>{APP_STRINGS.about2}</p>
           </Col>
         </Row>
       </Container>
