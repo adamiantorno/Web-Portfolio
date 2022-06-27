@@ -9,26 +9,22 @@ import APP_STRINGS from '../assets/strings';
 
 export default function Footer() {
   return (
-    <Container>
+    <Container fluid className="footer">
       <Row>
         <Col>
-          <h3>Contact Me</h3>
+          <h3 className="footer-title">Contact Me</h3>
         </Col>
       </Row>
       <Row>
         <Col>
-          <ul>
-            <li>
-              <a href='https://www.github.com/adamiantorno'>
-                <GrGithub />
-              </a>
-            </li>
-            <li>
-              <a href='https://www.linkedin.com/in/adamiantorno'>
-                <GrLinkedin />
-              </a>
-            </li>
-          </ul>
+          <div className='footer-socialicons'>
+            <a href="https://www.github.com/adamiantorno">
+              <GrGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/adamiantorno">
+              <GrLinkedin />
+            </a>
+          </div>
         </Col>
       </Row>
       <Row>
@@ -43,5 +39,5 @@ export default function Footer() {
         </Col>
       </Row>
     </Container>
-  )
+  );
 }
