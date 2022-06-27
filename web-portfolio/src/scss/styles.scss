@@ -16,7 +16,7 @@ section {
 
 .page-section {
     background-color: $primary-colour-1;
-    padding: 56px 0;
+    padding: 72px 0;
 }
 
 .section-title {
@@ -24,7 +24,13 @@ section {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3em;
+
+    &-white {
+        @extend .section-title;
+        color: #fff;
+    }
 }
+
 
 .bubble {
     background-color: #fff;
@@ -155,7 +161,11 @@ section {
 }
 
 .Typewriter__wrapper {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 550;
     text-shadow: 1px 1px 4px #fff;
+}
+
+.Typewriter__cursor {
+    font-size: 2.8rem;
 }

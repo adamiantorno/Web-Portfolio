@@ -31,12 +31,12 @@ export default function Projects() {
   const [activeGenre, setActiveGenre] = useState(0);
   
   return (
-    <section>
+    <section className='page-section'>
       <Container>
         <Container fluid>
           <Row>
             <Col>
-              <h2>What's Cooking in the Kitchen...</h2>
+              <h2 className='section-title-white'>What's Cooking in the Kitchen...</h2>
             </Col>
           </Row>
           <Row>
