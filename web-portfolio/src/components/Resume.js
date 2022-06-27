@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Document, Page } from "react-pdf";
 
 import AdamIantorno_Web_Resume from '../assets/files/AdamIantorno_Web_Resume.pdf';

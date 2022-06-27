@@ -6,10 +6,101 @@
     box-sizing: border-box;
 }
 
-.card {
-    color: black;
+body {
+    overflow-x: hidden;
 }
 
-// .inactive-exp {
-//     display: none;
-// }
+section {
+    min-height: auto;
+}
+
+//=== Header ===//
+.navbar, .scrollbar {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 50px; 
+
+    .nav-link {
+        transition: 0.3s;
+        padding: 1rem 1.5rem !important;
+        text-decoration: none;
+        z-index: 1;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: $primary-colour-4;
+            border-radius: 8px 8px 0 0;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        &:not(.is-active):hover::before {
+            opacity: 1;
+            bottom: 0;
+        }
+
+        &:not(.is-active):hover {
+            color: $primary-colour-4;
+        }
+
+        .nav-indicator {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            transition: 0.4s;
+            height: 5px;
+            z-index: 1;
+            border-radius: 8px 8px 0 0;
+
+        }
+    }
+}
+
+.scrollbar {
+    background-color: #1b1a2ea9;
+    transition: all 0.3s ease-out 0s;
+    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+    backdrop-filter: blur(15px);
+}
+
+
+//=== Footer ===//
+
+//=== Landing Page ===//
+
+.home-bg {
+    z-index: -1;
+    height: 110vh;
+    background-image: $background-grad, url(../assets/imgs/adambackground.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name-title {
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.name {
+    font-size: 7rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.Typewriter__wrapper {
+    font-size: 2.2rem;
+    font-weight: 550;
+    text-shadow: 1px 1px 4px #fff;
+}
