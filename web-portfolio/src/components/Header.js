@@ -25,7 +25,7 @@ export default function Header() {
         className={navColor ? "scrollbar" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className='nav-text'>ADAM IANTORNO</Navbar.Brand>
+        <Navbar.Brand href="/">ADAM IANTORNO</Navbar.Brand>
         <Navbar.Toggle
             aria-controls='responsive-navbar-nav'
         ></Navbar.Toggle>
@@ -60,7 +60,7 @@ export default function Header() {
                 Resume
               </Nav.Link>
             </Nav.Item>
-
+            <span className='nav-indicator'></span>
             
           </Nav>
         </Navbar.Collapse>
