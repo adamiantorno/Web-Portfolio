@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Col, Button } from 'react-bootstrap';
 
 export default function Filter({categories, projects, setFiltered, activeGenre, setActiveGenre}) {
+    
     useEffect(() => {
         if (activeGenre === 0){
             setFiltered(projects);

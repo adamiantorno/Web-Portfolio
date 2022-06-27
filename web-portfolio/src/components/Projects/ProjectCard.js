@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Col, Modal, Card, Button } from 'react-bootstrap';
+import { Col, Modal, Card, Button } from 'react-bootstrap';
 
 export default function ProjectCard({ item }) {
   const [show, setShow] = useState(false);

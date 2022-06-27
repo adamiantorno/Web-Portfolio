@@ -21,17 +21,18 @@ export default function Header() {
     <Navbar 
         fixed='top'
         expand='md'
+        variant='dark'
         className={navColor ? "scrollbar" : "navbar"}
     >
       <Container>
-        <Navbar.Brand>ADAM IANTORNO</Navbar.Brand>
+        <Navbar.Brand href="/" className='nav-text'>ADAM IANTORNO</Navbar.Brand>
         <Navbar.Toggle
             aria-controls='responsive-navbar-nav'
         ></Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className='ms-auto'>
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/'>
+              <Nav.Link as={ NavLink } to='/' className='nav-text'>
                 Home
               </Nav.Link>
             </Nav.Item>

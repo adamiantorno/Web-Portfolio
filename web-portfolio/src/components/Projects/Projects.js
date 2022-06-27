@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from './ProjectCard';
 import Filter from './Filter';
@@ -26,7 +26,7 @@ const categories = [
 
 export default function Projects() {
 
-  const [project, setProject] = useState(ProjData);
+  const project = ProjData;
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
   

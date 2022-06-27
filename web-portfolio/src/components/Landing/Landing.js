@@ -3,21 +3,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
 import APP_STRINGS from '../../assets/strings';
 
-import APP_SCRIPTS from '../../assets/strings';
-
-
 export default function Landing() {
   return (
     <section id="home">
-      <Container>
+      <Container fluid className='home-bg'>
         <Container>
           <Row>
-            <Col>
-              <h1>Adam</h1>
+            <Col className='name-title'>
+              <h1 className='name'>Adam</h1>
+              <h1 className='name'>Iantorno</h1>
               <div>
               <Typewriter
                   options={{
-                    strings: APP_SCRIPTS.adjectives,
+                    strings: APP_STRINGS.adjectives,
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,

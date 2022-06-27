@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 import ExpData from '../../assets/expdata';
@@ -6,7 +6,7 @@ import ExpData from '../../assets/expdata';
 export default function Experience() {
 
   const [activeExpId, setActiveExpId] = useState(0);
-  const [experience, setExperience] = useState(ExpData);
+  const experience = ExpData;
 
   return (
     <section>
