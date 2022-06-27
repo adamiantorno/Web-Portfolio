@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, ButtonGroup } from "react-bootstrap";
 
 import ExpData from '../../assets/expdata';
 
@@ -9,26 +9,28 @@ export default function Experience() {
   const experience = ExpData;
 
   return (
-    <section>
+    <section className='page-section'>
       <Container>
         <Container>
           <Row>
             <Col>
-              <h2>Where I've Worked</h2>
+              <h2 className='section-title-white'>Where I've Worked</h2>
             </Col>
           </Row>
-          <Row>
+          <Row className='bubble'>
             <Col xs={3}>
-              {experience.map((item) => {
-                return (
-                  <Button 
-                    key={item.id}
-                    onClick={() => setActiveExpId(item.id)}
-                  >
-                    {item.company}
-                  </Button>
-                );
-              })}
+              <ButtonGroup vertical>
+                {experience.map((item) => {
+                  return (
+                    <Button 
+                      key={item.id}
+                      onClick={() => setActiveExpId(item.id)}
+                    >
+                      {item.company}
+                    </Button>
+                  );
+                })}
+              </ButtonGroup>
             </Col>
             <Col xs={9}>
               {experience.map((item) => { 
