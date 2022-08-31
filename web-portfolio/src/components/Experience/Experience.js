@@ -17,22 +17,23 @@ export default function Experience() {
               <h2 className='section-title-white'>Where I've Worked</h2>
             </Col>
           </Row>
-          <Row className='bubble'>
-            <Col xs={3}>
+          <Row>
+            <Col xs={4} className='d-flex justify-content-end'>
               <ButtonGroup vertical>
                 {experience.map((item) => {
                   return (
-                    <Button 
+                    <button // no bootstrap button to avoid overwriting styles 
                       key={item.id}
                       onClick={() => setActiveExpId(item.id)}
+                      className={activeExpId === item.id ? "job-button-active" : "job-button"}
                     >
-                      {item.company}
-                    </Button>
+                      <h4>{item.company}</h4>
+                    </button>
                   );
                 })}
               </ButtonGroup>
             </Col>
-            <Col xs={9}>
+            <Col xs={8} className='bubble-exp'>
               {experience.map((item) => { 
                 return (
                   <Container 

@@ -9,14 +9,14 @@ export default function ProjectCard({ item }) {
   
   return (
       <Col key={item.id}>
-        <Button onClick={handleShow}>
+        <button onClick={handleShow}>
           <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={item.imgPath} alt="card-img"/>
           <Card.Body>
               <Card.Title className='card'>{item.title}</Card.Title>
           </Card.Body>
           </Card>
-        </Button>
+        </button>
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
