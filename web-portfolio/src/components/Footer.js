@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import {
   GrGithub,
-  GrLinkedin
+  GrLinkedin,
 } from "react-icons/gr"
 
 import APP_STRINGS from '../assets/strings';

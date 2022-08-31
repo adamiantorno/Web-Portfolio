@@ -38,6 +38,12 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link as={ NavLink } to='/about'>
+                About
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link as={ NavLink } to='/experience'>
                 Experience
               </Nav.Link>
@@ -55,11 +61,11 @@ export default function Header() {
               </Nav.Link>
             </Nav.Item> */}
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link as={ NavLink } to='/resume'>
                 Resume
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <span className='nav-indicator'></span>
             
           </Nav>
