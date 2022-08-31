@@ -26,21 +26,6 @@ export default function Landing() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className='page-section'>
-        <Container className='bubble'>
-          <Row>
-            <Col>
-              <h2 className='section-title'>About Me</h2>
-            </Col>
-          </Row>
-          <Row className='justify-content-sm-center'>
-            <Col sm={8}>
-              <p>{APP_STRINGS.about1}</p>
-              <p>{APP_STRINGS.about2}</p>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
     </section>
   );
 }
