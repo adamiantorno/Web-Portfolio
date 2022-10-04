@@ -31,6 +31,9 @@ export default function Experience() {
                     </button>
                   );
                 })}
+                <div className='highlight-exp'>
+                  
+                </div>
               </ButtonGroup>
             </Col>
             <Col xs={8} className='bubble-exp'>
