@@ -15,10 +15,44 @@ export default function About() {
           </Row>
           <Row className="bubble justify-content-sm-center">
             <Col sm={8}>
-              <p>{APP_STRINGS.about1}</p>
-              <p>{APP_STRINGS.about2}</p>
-              <p>{APP_STRINGS.about3}</p>
-              <p>Here are a few technologies I have experience working with:</p>
+              <Row>
+                <p>{APP_STRINGS.about1}</p>
+                <p>{APP_STRINGS.about2}</p>
+                <p>{APP_STRINGS.about3}</p>
+                <p>Here are a few technologies I have experience working with:</p>
+              </Row>
+              <Row>
+                <Col>
+                  <h4>Design</h4>
+                  <ul>
+                    {APP_STRINGS.skillset_design.map((item) => {
+                      return (
+                        <li>{item}</li>
+                      )
+                    })}
+                  </ul>
+                </Col>
+                <Col>
+                  <h4>Programming</h4>
+                  <ul>
+                    {APP_STRINGS.skillset_prog.map((item) => {
+                      return (
+                        <li>{item}</li>
+                      )
+                    })}
+                  </ul>
+                </Col>
+                <Col>
+                  <h4>Other</h4>
+                  <ul>
+                    {APP_STRINGS.skillset_other.map((item) => {
+                      return (
+                        <li>{item}</li>
+                      )
+                    })}
+                  </ul>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
