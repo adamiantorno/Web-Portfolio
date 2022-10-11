@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
@@ -14,6 +15,10 @@ export default function Header() {
       updateNavbar(false);
     }
   }
+
+  function handleScroll(ref) {
+    ref.current?.scrollIntroVew({behaviour: 'smooth'});
+  };
 
   window.addEventListener("scroll", scrolling);
 
@@ -32,25 +37,25 @@ export default function Header() {
         <Navbar.Collapse>
           <Nav className='ms-auto'>
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/' className='nav-text'>
+              <Nav.Link as={ NavLink } to='/#' onClick={handleScroll('landingRef')}>
                 Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/about'>
-                About
+              <Nav.Link as={ NavLink } to='#about'>
+                <Link to='about' spy={true} smooth={true} offset={72} duration={500}>About</Link>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/experience'>
+              <Nav.Link as={ NavLink } to='/#experience'>
                 Experience
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/projects'>
+              <Nav.Link as={ NavLink } to='/#projects'>
                 Projects
               </Nav.Link>
             </Nav.Item>

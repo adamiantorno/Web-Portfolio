@@ -1,11 +1,13 @@
-import React from 'react'
+import { useRef } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import APP_STRINGS from '../../assets/strings';
 
-
 export default function About() {
+
+  const aboutRef = useRef('aboutRef');
+
   return (
-    <section className="page-section">
+    <section className="page-section" ref={aboutRef} id='about'>
       <Container fluid>
         <Container>
           <Row>

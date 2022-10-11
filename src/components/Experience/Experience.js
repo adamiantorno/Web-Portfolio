@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Button, ButtonGroup } from "react-bootstrap";
+import { useState, useRef } from 'react';
+import { Container, Row, Col, ButtonGroup } from "react-bootstrap";
 
 import ExpData from '../../assets/expdata';
 
@@ -7,9 +7,10 @@ export default function Experience() {
 
   const [activeExpId, setActiveExpId] = useState(0);
   const experience = ExpData;
+  const expRef = useRef('expRef');
 
   return (
-    <section className='page-section'>
+    <section className='page-section' ref={expRef}>
       <Container>
         <Container>
           <Row>
