@@ -1,11 +1,14 @@
-import React from 'react';
+import { useRef } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
 import APP_STRINGS from '../../assets/strings';
 
 export default function Landing() {
+
+  const landingRef = useRef('landingRef');
+
   return (
-    <section id="home">
+    <section id="home" ref={landingRef}>
       <Container fluid className='home-bg'>
         <Container>
           <Row>
