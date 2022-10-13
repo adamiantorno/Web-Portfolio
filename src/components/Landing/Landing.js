@@ -1,14 +1,13 @@
-import { useRef } from 'react';
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
-import APP_STRINGS from '../../assets/strings';
 
 export default function Landing() {
 
-  const landingRef = useRef('landingRef');
+  const adjectives = ['Engineering Student', 'Innovator', 'Self-Starter']
 
   return (
-    <section id="home" ref={landingRef}>
+    <section id='home'>
       <Container fluid className='home-bg'>
         <Container>
           <Row>
@@ -18,7 +17,7 @@ export default function Landing() {
               <div>
               <Typewriter
                   options={{
-                    strings: APP_STRINGS.adjectives,
+                    strings: adjectives,
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,

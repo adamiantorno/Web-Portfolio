@@ -5,8 +5,6 @@ import {
   GrLinkedin,
 } from "react-icons/gr"
 
-import APP_STRINGS from '../assets/strings';
-
 export default function Footer() {
   return (
     <Container fluid className="footer">
@@ -35,7 +33,7 @@ export default function Footer() {
           <h4>Designed and Built by Adam Iantorno</h4>
         </Col>
         <Col>
-          <h4>{APP_STRINGS.email}</h4>
+          <h4>aiantorn@uwaterloo.ca</h4>
         </Col>
       </Row>
     </Container>

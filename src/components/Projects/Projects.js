@@ -1,9 +1,9 @@
-import { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from './ProjectCard';
 import Filter from './Filter';
 
-import ProjData from '../../assets/projectdata';
+import ProjData from './projectdata';
 
 const categories = [
   {
@@ -27,12 +27,11 @@ const categories = [
 export default function Projects() {
 
   const project = ProjData;
-  const projectRef = useRef('projectRef');
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
   
   return (
-    <section className='page-section' ref={projectRef}>
+    <section className='page-section'id='projects'>
       <Container>
         <Container fluid>
           <Row>
