@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -15,10 +14,6 @@ export default function Header() {
       updateNavbar(false);
     }
   }
-
-  function handleScroll(ref) {
-    ref.current?.scrollIntroVew({behaviour: 'smooth'});
-  };
 
   window.addEventListener("scroll", scrolling);
 
@@ -37,42 +32,22 @@ export default function Header() {
         <Navbar.Collapse>
           <Nav className='ms-auto'>
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/#' onClick={handleScroll('landingRef')}>
-                Home
-              </Nav.Link>
+              <Link className='nav-link' to='home' spy={true} smooth={true} offset={5} duration={200}>Home</Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='#about'>
-                <Link to='about' spy={true} smooth={true} offset={72} duration={500}>About</Link>
-              </Nav.Link>
+              <Link className='nav-link' to='about' spy={true} smooth={true} offset={72} duration={400}>About</Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/#experience'>
-                Experience
-              </Nav.Link>
+              <Link className='nav-link' to='experience' spy={true} smooth={true} offset={72} duration={400}>Experience</Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={ NavLink } to='/#projects'>
-                Projects
-              </Nav.Link>
+              <Link className='nav-link' to='projects' spy={true} smooth={true} offset={72} duration={400}>Projects</Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link as={ NavLink } to='/blog'>
-                Blog
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item>
-              <Nav.Link as={ NavLink } to='/resume'>
-                Resume
-              </Nav.Link>
-            </Nav.Item> */}
-            <span className='nav-indicator'></span>
-            
+            <span className='nav-indicator'></span>     
           </Nav>
         </Navbar.Collapse>
       </Container>

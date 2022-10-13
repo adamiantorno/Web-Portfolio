@@ -13,7 +13,7 @@ export default function Filter({categories, projects, setFiltered, activeGenre, 
         );
         console.log(filtered);
         setFiltered(filtered);
-    }, [activeGenre]);    
+    }, [activeGenre, projects, setFiltered]);    
 
 return (
     <Col>
