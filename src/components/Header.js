@@ -36,15 +36,15 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
-              <Link className='nav-link' to='about' spy={true} smooth={true} offset={72} duration={400}>About</Link>
+              <Link className='nav-link' to='about' spy={true} smooth={true} offset={0} duration={400}>About</Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Link className='nav-link' to='experience' spy={true} smooth={true} offset={72} duration={400}>Experience</Link>
+              <Link className='nav-link' to='experience' spy={true} smooth={true} offset={0} duration={400}>Experience</Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Link className='nav-link' to='projects' spy={true} smooth={true} offset={72} duration={400}>Projects</Link>
+              <Link className='nav-link' to='projects' spy={true} smooth={true} offset={0} duration={400}>Projects</Link>
             </Nav.Item>
 
             <span className='nav-indicator'></span>     
