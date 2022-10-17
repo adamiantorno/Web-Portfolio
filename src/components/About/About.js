@@ -26,8 +26,8 @@ export default function About() {
           </Row>
           <Row className="bubble justify-content-sm-center">
             <Row className='about-info'>
-              <Col className='about-text' md={9}>
-                <p>Hi! My name is Adam. <span>&#128075;</span></p>
+              <Col className='about-text' md={8}>
+                <p>Hi! My name is Adam. <span style={{ fontSize: '1.5rem' }}>&#128075;</span></p>
                 <p>I'm a third year student studying mechanical engineering at the University of Waterloo, Canada. 
                   Outside of school, I'm a self-taught programmer with a passion for learning and expanding my skillset. 
                   My goal is to build sustainable and applicable products that push the limits of technology and design.</p>
