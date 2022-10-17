@@ -14,11 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    min-height: 100vh;
-
-}
-
 .inline-link {
     position: relative;
     color: $primary-colour-2;
@@ -48,6 +43,7 @@ section {
 }
 
 .page-section {
+    min-height: 100vh;
     background-color: $primary-colour-1;
     padding: 72px 0;
     display: flex !important;
@@ -60,6 +56,7 @@ section {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3em;
+    margin-bottom: 20px;
 
     &-white {
         @extend .section-title;
@@ -254,12 +251,13 @@ section {
 }
 
 //-------------------------------------------------//
-//------------------ EXXPERIENCE ------------------//
+//------------------ EXPERIENCE ------------------//
 //-------------------------------------------------//
 
 .bubble-exp {
     @extend .bubble;
     border-radius: 0px 10px 10px 0px;
+    padding-left: 25px !important;
 }
 
 .job-button {
@@ -269,6 +267,8 @@ section {
     padding: 10px 20px;
     text-align: right;
     color: $primary-colour-3;
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s;
 
     &-active {
         @extend .job-button;
@@ -282,21 +282,116 @@ section {
     }
 }
 
-.exp-group, .tabs, .test {
-    margin: 0;
-}
-
 .highlight-exp {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
-    width: 8px;
+    width: 12px;
     height: 20%;
-    border-radius: 4px;
+    border-radius: 50% 0px 0px 50%;
     background: white;
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-delay: 0.1s;
+}
+
+.exp-desc {
+    display: none;
+
+    &.exp-active {
+        display: block;
+        animation: scale-display 1s;
+    }
+
+    &.exp-inactive {
+        display: block;
+        animation: scale-display--reversed .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes scale-display {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.exp-section {
+    min-height: 100vh;
+    background-color: $primary-colour-1;
+    padding: 72px 0;
+}
+
+.filler {
+    position: relative;
+    top: 25vh;
+}
+ 
+
+.exp {
+
+    &-div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-title {
+        text-align: left;
+
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+
+    &-period {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $primary-colour-3;
+    }
+
+    &-logo {
+         max-height: 40px;
+
+        &.logo-UWAFT, &.logo-416 {
+            max-height: 70px;
+        }
+    }
+
+    &-list {
+        text-align: left;
+        line-height: 2;
+        margin-top: 0.5em;
+        padding: 0 !important   ;
+    }
+
+    &-item {
+        position: relative;
+        list-style-type: none;
+        margin-bottom: 0.2rem;
+        padding-left: 1.5rem;
+        text-align: left;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 5px;
+            height: 11px;
+            border-width: 0 2px 2px 0;
+            border-style: solid;
+            border-color: $primary-colour-2;
+            transform-origin: bottom left;
+            transform: rotate(45deg);
+        }
+
+    }
 }
 
 //-------------------------------------------------//
