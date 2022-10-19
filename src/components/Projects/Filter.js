@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Col, Button } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+
 
 export default function Filter({categories, projects, setFiltered, activeGenre, setActiveGenre}) {
     
@@ -11,21 +12,23 @@ export default function Filter({categories, projects, setFiltered, activeGenre, 
         const filtered = projects.filter((project) => 
             project.category_ids.includes(activeGenre)
         );
-        console.log(filtered);
+        //console.log(filtered);
         setFiltered(filtered);
     }, [activeGenre, projects, setFiltered]);    
 
 return (
     <Col>
+        <span className='filter-title'>Filter by</span>
         {categories.map((cat) => {
             return (
-                <Button
-                    key={cat.id}
-                    className={activeGenre === cat.id ? "active" : ""}
-                    onClick={() => setActiveGenre(cat.id)}
+
+                <button
+                  key={cat.id}
+                  className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
+                  onClick={() => setActiveGenre(cat.id)}
                 >
-                    {cat.name}
-                </Button>
+                  {cat.name}
+                </button>
             );
         })}  
     </Col>

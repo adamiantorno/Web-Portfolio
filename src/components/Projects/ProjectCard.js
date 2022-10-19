@@ -1,37 +1,34 @@
 import React, { useState } from 'react';
-import { Col, Modal, Card, Button } from 'react-bootstrap';
+import { Modal, Button, Col } from 'react-bootstrap';
 
 export default function ProjectCard({ item }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
   return (
-      <Col key={item.id}>
-        <button onClick={handleShow}>
-          <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={item.imgPath} alt="card-img"/>
-          <Card.Body>
-              <Card.Title className='card'>{item.title}</Card.Title>
-          </Card.Body>
-          </Card>
-        </button>
+    <Col>
+      <button onClick={handleShow} className={"card-main card-" + item.id}>
+        <div className="card-img"></div>
+        <div className="card-img-hovered"></div>
+        <div className="card-info">
+          <h1 className="card-title">{item.title}</h1>
+          <span className="card-date">{item.date}</span>
+        </div>
+      </button>
 
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>{item.desc}</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </Col>  
-
-      
-    
-  )
+      <Modal show={show} onHide={handleClose} dialogClassName="modal-90w" className='modal-90w'>
+        <Modal.Header closeButton>
+          <Modal.Title>{item.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{item.desc}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Col>
+  );
 }

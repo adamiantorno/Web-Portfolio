@@ -19,7 +19,7 @@ export default function Experience() {
             </Col>
           </Row>
           <Row className='exp-div'>
-            <Col xs={4} className="d-flex justify-content-end p-0">
+            <Col xs={3} className="d-flex justify-content-end p-0">
               <ButtonGroup vertical>
                 {experience.map((item) => {
                   return (
@@ -44,7 +44,7 @@ export default function Experience() {
                 ></div>
               </ButtonGroup>
             </Col>
-            <Col xs={8} className="bubble-exp">
+            <Col xs={9} className="bubble-exp">
               {experience.map((item) => {
                 return (
                   <Container
@@ -57,9 +57,9 @@ export default function Experience() {
                     aria-hidden={activeExpId !== item.id}
                     hidden={activeExpId !== item.id}
                   >
-                    <Row>
+                    <Row className='exp-info-row'>
                       <Col className='exp-title' md={9}>
-                          <h4>{item.title} <a href={item.link} target="_blank" rel='noreferrer noopener' className='inline-link'>@{item.company}</a></h4>
+                          <h3>{item.title} <a href={item.link} target="_blank" rel='noreferrer noopener' className='inline-link'>@{item.company}</a></h3>
                           <span className='exp-period'>{item.period}</span>
                       </Col>
                       <Col>

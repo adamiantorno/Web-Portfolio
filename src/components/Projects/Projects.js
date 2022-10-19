@@ -21,41 +21,50 @@ const categories = [
   {
     "id": 30,
     "name": "Software"
+  },
+  {
+    "id": 40,
+    "name": "Other"
   }
 ]
 
 export default function Projects() {
 
-  const project = ProjData;
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
   
   return (
-    <section className='page-section'id='projects'>
-      <Container>
+    <section className="project-section" id="projects">
+      <Container className="project-div">
         <Container fluid>
           <Row>
             <Col>
-              <h2 className='section-title-white'>What's Cooking in the Kitchen...</h2>
+              <h2 className="section-title-white">My Recent Works</h2>
             </Col>
           </Row>
-          <Row>
-            <Filter 
-              categories={categories} 
-              projects={project} 
-              filtered={filtered} 
+          <Row className='project-filter'>
+            <Filter
+              categories={categories}
+              projects={ProjData}
+              filtered={filtered}
               setFiltered={setFiltered}
-              activeGenre={activeGenre}  
+              activeGenre={activeGenre}
               setActiveGenre={setActiveGenre}
             />
           </Row>
           <Row>
             {filtered.map((item) => {
-              return <ProjectCard item={item} />;
+              return (
+                <ProjectCard
+                  item={item}
+                  categories={categories}
+                  className="project-card"
+                />
+              );
             })}
           </Row>
         </Container>
       </Container>
     </section>
-  )
+  );
 }
