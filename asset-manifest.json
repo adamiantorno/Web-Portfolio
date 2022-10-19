@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.be7bfead.js",
+    "main.css": "/static/css/main.819e7352.css",
+    "main.js": "/static/js/main.eca5759e.js",
     "static/js/787.e8a52378.chunk.js": "/static/js/787.e8a52378.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/cover_arduino.jpg": "/static/media/cover_arduino.96dc3b957fd7155246b0.jpg",
+    "static/media/cover_hil.jpg": "/static/media/cover_hil.65186fa2a7c8e9c58048.jpg",
+    "static/media/cover_bracket.jpg": "/static/media/cover_bracket.837d8b927bb70549654a.jpg",
+    "static/media/aboutmepic.jpg": "/static/media/aboutmepic.bf4494f95d0dd09624a2.jpg",
+    "static/media/cover_speech.png": "/static/media/cover_speech.31224f5de6e4c4c9bb9e.png",
+    "static/media/cover_diag.jpg": "/static/media/cover_diag.c73767627cdc8261184f.jpg",
+    "static/media/cover_website.png": "/static/media/cover_website.078d8e4196f22bad45cc.png",
+    "static/media/cover_quad.png": "/static/media/cover_quad.e634f198edd8d14c6820.png",
+    "static/media/adambackground.jpg": "/static/media/adambackground.5d4fc3f28c07bcf8760a.jpg",
+    "static/media/UwaftLogo.jpg": "/static/media/UwaftLogo.dc88fe99b6dc16691e64.jpg",
+    "static/media/416Logo.jpg": "/static/media/416Logo.a8575a543141d8b8868d.jpg",
+    "static/media/cover_cftracker.png": "/static/media/cover_cftracker.fdc58aacb48b4d1fa041.png",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.be7bfead.js.map": "/static/js/main.be7bfead.js.map",
+    "main.819e7352.css.map": "/static/css/main.819e7352.css.map",
+    "main.eca5759e.js.map": "/static/js/main.eca5759e.js.map",
     "787.e8a52378.chunk.js.map": "/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.be7bfead.js"
+    "static/css/main.819e7352.css",
+    "static/js/main.eca5759e.js"
   ]
 }
