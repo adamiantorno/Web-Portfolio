@@ -47,6 +47,10 @@ export default function Header() {
               <Link className='nav-link' to='projects' spy={true} smooth={true} offset={0} duration={400}>Projects</Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <a href="src\assets\files\AdamIantorno_Web_Resume.pdf">Resume</a>
+            </Nav.Item>
+
             <span className='nav-indicator'></span>     
           </Nav>
         </Navbar.Collapse>

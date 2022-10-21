@@ -13,8 +13,8 @@ const ProjData = [
                 img: null
             },
             {
-                split1: true,
-                split2: false,
+                split1: false,
+                split2: true,
                 text: 'Hello',
                 img: null
             },
