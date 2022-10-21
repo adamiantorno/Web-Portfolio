@@ -1,0 +1,33 @@
+import React from 'react';
+import { Container, Row, Col } from "react-bootstrap";
+import Typewriter from 'typewriter-effect';
+
+export default function Landing() {
+
+  const adjectives = ['Engineering Student', 'Innovator', 'Self-Starter']
+
+  return (
+    <section id='home'>
+      <Container fluid className='home-bg'>
+        <Container>
+          <Row>
+            <Col className='name-title'>
+              <h1 className='name'>Adam</h1>
+              <h1 className='name'>Iantorno</h1>
+              <div>
+              <Typewriter
+                  options={{
+                    strings: adjectives,
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+    </section>
+  );
+}
