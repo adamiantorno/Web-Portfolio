@@ -22,7 +22,33 @@ export default function ProjectCard({ item }) {
         <Modal.Header closeButton>
           <Modal.Title>{item.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{item.desc}</Modal.Body>
+        <Modal.Body>{item.desc.map((modal) => {
+          if (modal.split1) {
+            return (
+              <Row>
+                <h2>{modal.heading}</h2>
+                <Col sm={8}>{modal.text}</Col>
+                <Col snm={4}>{modal.img}</Col>
+              </Row>
+            )
+          } else if (modal.split2) {
+            return (
+              <Row>
+                <h2>{modal.heading}</h2>
+                <Col sm={4}>{modal.img}</Col>
+                <Col sm={8}>{modal.text}</Col>
+              </Row>
+            )
+          } else {
+            return (
+              <Row>
+                <h2>{modal.heading}</h2>
+                <Col>{modal.main}</Col>
+              </Row>
+            )
+          }
+          
+        })}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
