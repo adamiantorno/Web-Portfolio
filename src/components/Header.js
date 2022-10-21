@@ -47,6 +47,10 @@ export default function Header() {
               <Link className='nav-link' to='projects' spy={true} smooth={true} offset={0} duration={400}>Projects</Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link>Resume</Nav.Link>
+            </Nav.Item>
+
             <span className='nav-indicator'></span>     
           </Nav>
         </Navbar.Collapse>

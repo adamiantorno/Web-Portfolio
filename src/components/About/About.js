@@ -33,7 +33,7 @@ export default function About() {
                   My goal is to build sustainable and applicable products that push the limits of technology and design.</p>
                 <p>Currently, I am working as a Robotics Developer (co-op) at the start-up {metalsLInk}.
                   We are building autonomous underwater vehicles (AUVs) that harvest battery metals from the seabed without harming the environment.</p>
-                <p>I am seeking a 4-month internship position for Spring 2023.</p>
+                <p>I am seeking a 4-month internship position for Summer 2023.</p>
               </Col>
               <Col>
                 <Image

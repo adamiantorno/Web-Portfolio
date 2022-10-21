@@ -15,40 +15,20 @@ export default function ProjectCard({ item }) {
         <div className="card-info">
           <h1 className="card-title">{item.title}</h1>
           <span className="card-date">{item.date}</span>
+          <h5 className='card-show'>- Show Project -</h5>
         </div>
       </button>
 
-      <Modal show={show} onHide={handleClose} dialogClassName="modal-90w" className='modal-90w'>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        dialogClassName="modal-70w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
         <Modal.Header closeButton>
           <Modal.Title>{item.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{item.desc.map((modal) => {
-          if (modal.split1) {
-            return (
-              <Row>
-                <h2>{modal.heading}</h2>
-                <Col sm={8}>{modal.text}</Col>
-                <Col snm={4}>{modal.img}</Col>
-              </Row>
-            )
-          } else if (modal.split2) {
-            return (
-              <Row>
-                <h2>{modal.heading}</h2>
-                <Col sm={4}>{modal.img}</Col>
-                <Col sm={8}>{modal.text}</Col>
-              </Row>
-            )
-          } else {
-            return (
-              <Row>
-                <h2>{modal.heading}</h2>
-                <Col>{modal.main}</Col>
-              </Row>
-            )
-          }
-          
-        })}</Modal.Body>
+        <Modal.Body>{item.body}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
