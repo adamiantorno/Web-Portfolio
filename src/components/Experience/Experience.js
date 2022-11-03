@@ -10,7 +10,7 @@ export default function Experience() {
   const highlightHeight = '57px';
 
   return (
-    <section className="exp-section" id="experience">
+    <section className="section-page" id="experience">
       <Container className='filler'>
         <Container>
           <Row>

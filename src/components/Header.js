@@ -3,6 +3,8 @@ import { Link } from 'react-scroll';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import AdamIantorno_Web_Resume from '../assets/files/AdamIantorno_Web_Resume.pdf';
+
 
 export default function Header() {
   const [navColor, updateNavbar] = useState(false);
@@ -48,7 +50,7 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link>Resume</Nav.Link>
+              <Nav.Link href={AdamIantorno_Web_Resume}>Resume</Nav.Link>
             </Nav.Item>
 
             <span className='nav-indicator'></span>     

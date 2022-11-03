@@ -1,18 +1,16 @@
-Project Modal Text for all projects
-project card grid and animation
-spacing for project and exp
-scroll animation appear
-make responsive for phone
-add resume link
-tighten up job descriptons
-make more personal
-- add interests like rock climbing, reading, etc.
-- quotesnpm
-
-Immediate action:
-- Project Modal Text and Pictures
-- Project Card grid and animation
-- Proper vertical alignment of sections
-- Responsive for phone
-- Add resume Link
+To do in order:
+- Add Resume Link CHECK
+- Add About me section CHECK
+- Add proper project card and animation CHECK
+- Style projects CHECK
+    HIL CHECK
+    Arduino CHECK
+    quad CHECK
+    bracket CHECK
+    carbon CHECK
+    sensor CHECK
+    website CHECK
+    speech CHECK
+- proper vertical alignment of sections CHECK
+- responsive for phone
 - update css styling

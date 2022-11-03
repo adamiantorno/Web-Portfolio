@@ -8,7 +8,7 @@ export default function ProjectCard({ item }) {
   const handleShow = () => setShow(true);
 
   return (
-    <Col>
+    <Col md={4}>
       <button onClick={handleShow} className={"card-main card-" + item.id}>
         <div className="card-img"></div>
         <div className="card-img-hovered"></div>
@@ -26,7 +26,14 @@ export default function ProjectCard({ item }) {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title>{item.title}</Modal.Title>
+          <Modal.Title>
+            <h1>{item.title}</h1>
+            <div className='tags'>
+              {item.skills.map((skill) => (
+                <span className='tag italics'>{skill}</span>
+              ))}
+            </div>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>{item.body}</Modal.Body>
         <Modal.Footer>

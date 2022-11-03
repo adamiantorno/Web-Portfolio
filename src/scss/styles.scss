@@ -14,6 +14,45 @@ body {
     overflow-x: hidden;
 }
 
+.section {
+
+    &-page {
+        min-height: 100vh;
+        background-color: $primary-colour-1;
+        padding: $nav-size 0;
+
+    }
+
+    &-title {
+        color: $primary-colour-1;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+    
+        &-white {
+            @extend .section-title;
+            color: #fff;
+        }
+    }
+
+}
+
+.bubble {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 1px 1px 20px 8px rgba(50, 46, 68, 0.55);
+}
+
+.italics {
+    font-style: italic;
+}
+
+.bolden {
+    font-weight: bold;
+}
+
 .inline-link {
     position: relative;
     color: $primary-colour-2;
@@ -42,44 +81,13 @@ body {
     }
 }
 
-.page-section {
-    min-height: 100vh;
-    background-color: $primary-colour-1;
-    padding: 72px 0;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.section-title {
-    color: $primary-colour-1;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3em;
-    margin-bottom: 20px;
-
-    &-white {
-        @extend .section-title;
-        color: #fff;
-    }
-}
-
-
-.bubble {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px 30px;
-    box-shadow: 1px 1px 20px 8px rgba(50, 46, 68, 0.55);
-}
-
-
 //-------------------------------------------------//
 //------------------ HEADER -----------------------//
 //-------------------------------------------------//
 
 .navbar, .scrollbar {
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: $text-nav-size;
     font-weight: 500;
 
     .nav-link {
@@ -187,7 +195,7 @@ body {
     }
 
     &-text {
-        font-size: 1.2em;
+        font-size: $text-standard-size;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -202,9 +210,37 @@ body {
 
     &-pic {
         height: 34vh;
+
+        &-climbing {
+            border-radius: 20px !important;
+            height: 28vh;
+            margin-bottom: 10px;
+        }
+
+        &-camb {
+            border-radius: 20px !important;
+            height: 28vh;
+            object-fit: cover;
+        }
+
+        &-boat {
+            border-radius: 20px !important;
+            height: 30vh;
+            width: 102%;
+            object-fit: cover;
+        }
+         
+        &-ski {
+            border-radius: 20px !important;
+            height: 30vh;  
+            object-fit: cover;
+        }
     }
 
     &-tech {
+
+        margin-bottom: 20px;
+
         span {
             font-size: 1.75em;
             font-weight: bold;
@@ -220,9 +256,6 @@ body {
         ul {
             margin: 0;
             padding-left: 10rem;
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
         }
 
         li {
@@ -248,8 +281,18 @@ body {
             }
         }
     }
-}
 
+    &-fun {
+
+        h3 {
+            color: $primary-colour-2;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    }
+}
 //-------------------------------------------------//
 //------------------ EXPERIENCE ------------------//
 //-------------------------------------------------//
@@ -320,18 +363,10 @@ body {
     }
 }
 
-
-.exp-section {
-    min-height: 100vh;
-    background-color: $primary-colour-1;
-    padding: 72px 0;
-}
-
 .filler {
     position: relative;
     top: 25vh;
 }
-
 
 .exp {
 
@@ -379,7 +414,7 @@ body {
         margin-bottom: 0.2rem;
         padding-left: 1.5rem;
         text-align: left;
-        font-size: 1.2em;
+        font-size: $text-standard-size;
 
         &:before {
             content: '';
@@ -403,17 +438,6 @@ body {
 //----------------- PROEJCTS ----------------------//
 //-------------------------------------------------//
 .project {
-
-    &-section {
-        min-height: 100vh;
-        background-color: $primary-colour-1;
-        padding: 72px 0;
-    }
-
-    &-div {
-        position: relative;
-        top: 10vh;
-    }
 
     &-filter {
         margin-bottom: 20px;
@@ -458,7 +482,6 @@ body {
 }
 
 .card {
-
     &-main {
         position: relative;
         width: 325px;
@@ -619,8 +642,9 @@ body {
     }
 }
 
-
-// Madal Project Specific Styling
+//-------------------------------------------------//
+//------------------ MODALS -----------------------//
+//-------------------------------------------------//
 
 .modal {
     &-70w {
@@ -635,7 +659,113 @@ body {
     &-title {
         font-size: 2rem !important; 
     }
+
+    &-img, &-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    td, th, li {
+        font-size: $text-standard-size;
+    }
+
+    p {
+        font-size: $text-standard-size;
+        text-indent: 40px;
+    }
+
+    h3 {
+        color: $primary-colour-1;
+    }
+
+    figcaption {
+        @extend .italics;
+        font-size: 16px;
+        margin: 0 auto 0 auto;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    
 }
+
+.tags {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tag {
+        font-size: 0.5em !important;
+        display: block;
+        padding: 0.3em 0.85em;
+        margin: 0.5em;  
+        border: 3px solid $primary-colour-4;
+        border-radius: 2em;
+        transition: transform 0.2s;
+        transition-timing-function: cubic-bezier(0.45, -0.85, 0.55, -0.45);
+    }
+}
+
+.center-table {
+    td {
+        font-size: 1em;
+    }
+}
+
+.img {
+
+    &-centered {
+        object-fit: contain;
+    }
+
+    &-hil {
+
+        &-canframe {
+            max-width: 100%;
+        }
+
+        &-mounts {
+            height: 40vh;
+        }
+
+        &-cad {
+            height: 35vh;
+        }
+    }
+
+    &-arduino {
+
+        &-initial {
+            height: 30vh;
+        }
+    }
+
+    &-quad {
+
+        &-components {
+            transform: rotate(180deg);
+        }
+
+        &-final {
+            height: 60vh;
+        }
+    }
+
+    &-gf {
+        &-flow {
+            object-fit: contain;
+            height: 32vh;
+        }
+
+        &-final {
+            height: 40vh;
+        }
+    }
+}
+
 
 .video-responsive {
     overflow: hidden;
