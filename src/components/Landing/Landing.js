@@ -9,9 +9,9 @@ export default function Landing() {
   return (
     <section id='home'>
       <Container fluid className='home-bg'>
-        <Container>
+        <Container className='home-main'>
           <Row>
-            <Col className='name-title'>
+            <Col className='home-title'>
               <h1 className='name'>Adam</h1>
               <h1 className='name'>Iantorno</h1>
               <div>

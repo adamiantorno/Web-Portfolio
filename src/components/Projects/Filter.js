@@ -17,7 +17,7 @@ export default function Filter({categories, projects, setFiltered, activeGenre, 
     }, [activeGenre, projects, setFiltered]);    
 
 return (
-    <Col>
+    <Col className='filter'>
         <span className='filter-title'>Filter by</span>
         {categories.map((cat) => {
             return (

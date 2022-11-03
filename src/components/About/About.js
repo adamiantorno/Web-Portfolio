@@ -2,10 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image } from "react-bootstrap";
 
 import aboutme from '../../assets/imgs/aboutmepic.jpg';
-import about_boat from '../../assets/imgs/about_boat.jpg';
-import about_camb from '../../assets/imgs/about_camb.jpg';
-import about_climb from '../../assets/imgs/about_climb.png';
-import about_ski from '../../assets/imgs/about_ski.jpg'
+import about_adventure from '../../assets/imgs/about_adventure.png'
 
 export default function About() {
   
@@ -87,39 +84,13 @@ export default function About() {
             <hr></hr>
             <Row className="about-fun">
               <h3>Outside of Academia</h3>
-              <Col md={6}>
-                <Row>
-                  <Col sm={3} className='px-0'>
-                    <Image
-                      className="about-pic-climbing"
-                      src={about_climb}
-                      alt="Climbing"
-                    />
-                  </Col>
-                  <Col sm={9} className='px-0'>
-                    <Image
-                      className="about-pic-camb"
-                      src={about_camb}
-                      alt="Cambodia"
-                    />
-                  </Col>
-                </Row>
-                <Row>
-                  <Col sm={6} className='px-0'>
-                    <Image 
-                      className="about-pic-boat"  
-                      src={about_boat} 
-                      alt="Boat" />
-                  </Col>
-                  <Col sm={6} className='px-0'>
-                    <Image 
-                      className="about-pic-ski"
-                      src={about_ski} 
-                      alt="Skiing" />
-                  </Col>
-                </Row>
+              <Col md={6} className='about-pic-div'>
+              <Image 
+                className="about-pic-adventure"  
+                src={about_adventure} 
+                alt="Adventure" />
               </Col>
-              <Col md={6} className="about-text">
+              <Col md={6} className="about-text py-3">
                 <p> Aside from engineering and projects, I enjoy having fun with my close friends and
                   family, while also spending personal time to recharge.</p>
                 <p>

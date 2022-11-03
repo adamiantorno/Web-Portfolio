@@ -7,11 +7,10 @@ export default function Experience() {
 
   const [activeExpId, setActiveExpId] = useState(0);
   const experience = ExpData;
-  const highlightHeight = '57px';
 
   return (
     <section className="section-page" id="experience">
-      <Container className='filler'>
+      <Container className='py-5'>
         <Container>
           <Row>
             <Col>
@@ -19,8 +18,8 @@ export default function Experience() {
             </Col>
           </Row>
           <Row className='exp-div'>
-            <Col xs={3} className="d-flex justify-content-end p-0">
-              <ButtonGroup vertical>
+            <Col md={3} className="d-flex justify-content-end p-0">
+              <ButtonGroup className='exp-btn-group'>
                 {experience.map((item) => {
                   return (
                     <button // no bootstrap button to avoid overwriting styles
@@ -28,8 +27,8 @@ export default function Experience() {
                       onClick={() => setActiveExpId(item.id)}
                       className={
                         activeExpId === item.id
-                          ? "job-button-active"
-                          : "job-button"
+                          ? "exp-button exp-button-active"
+                          : "exp-button"
                       }
                     >
                       <h4>{item.company}</h4>
@@ -37,14 +36,11 @@ export default function Experience() {
                   );
                 })}
                 <div
-                  className="highlight-exp"
-                  style={{
-                    transform: `translateY(calc(${activeExpId}*${highlightHeight}))`,
-                  }}
+                  className={"exp-highlight exp-h-" + activeExpId}
                 ></div>
               </ButtonGroup>
             </Col>
-            <Col xs={9} className="bubble-exp">
+            <Col md={9} className="exp-bubble">
               {experience.map((item) => {
                 return (
                   <Container
