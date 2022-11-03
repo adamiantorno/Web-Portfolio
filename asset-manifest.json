@@ -1,12 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.33352b96.css",
-    "main.js": "/static/js/main.3f3d3e0d.js",
+    "main.css": "/static/css/main.17fdfef6.css",
+    "main.js": "/static/js/main.05a93075.js",
     "static/js/787.e8a52378.chunk.js": "/static/js/787.e8a52378.chunk.js",
-    "static/media/about_climb.png": "/static/media/about_climb.7805fa1cc962f5f5d744.png",
-    "static/media/about_camb.jpg": "/static/media/about_camb.94ff8b27405b8cda6614.jpg",
     "static/media/arduino_solder.jpeg": "/static/media/arduino_solder.2954becca358aa2541bc.jpeg",
-    "static/media/about_ski.jpg": "/static/media/about_ski.88dadc556db8f047ae56.jpg",
     "static/media/quad_components.jpg": "/static/media/quad_components.b953446e13c0325d84ca.jpg",
     "static/media/cover_arduino.jpg": "/static/media/cover_arduino.96dc3b957fd7155246b0.jpg",
     "static/media/cover_hil.jpg": "/static/media/cover_hil.65186fa2a7c8e9c58048.jpg",
@@ -14,7 +11,7 @@
     "static/media/quad_motorarm.jpg": "/static/media/quad_motorarm.f682ee0094ac29455da6.jpg",
     "static/media/aboutmepic.jpg": "/static/media/aboutmepic.bf4494f95d0dd09624a2.jpg",
     "static/media/cover_speech.png": "/static/media/cover_speech.31224f5de6e4c4c9bb9e.png",
-    "static/media/about_boat.jpg": "/static/media/about_boat.5173932eef2950cda9a4.jpg",
+    "static/media/about_adventure.png": "/static/media/about_adventure.d6f0960964c074ca113e.png",
     "static/media/cover_diag.jpg": "/static/media/cover_diag.c73767627cdc8261184f.jpg",
     "static/media/quad_circuitboard.png": "/static/media/quad_circuitboard.3a35f32e424490db0b9a.png",
     "static/media/arduino_initial.png": "/static/media/arduino_initial.19e4fbfc50da3fc21fa2.png",
@@ -42,12 +39,12 @@
     "static/media/cftracker_input.png": "/static/media/cftracker_input.70437117eaab258f718d.png",
     "static/media/cover_cftracker.png": "/static/media/cover_cftracker.fdc58aacb48b4d1fa041.png",
     "index.html": "/index.html",
-    "main.33352b96.css.map": "/static/css/main.33352b96.css.map",
-    "main.3f3d3e0d.js.map": "/static/js/main.3f3d3e0d.js.map",
+    "main.17fdfef6.css.map": "/static/css/main.17fdfef6.css.map",
+    "main.05a93075.js.map": "/static/js/main.05a93075.js.map",
     "787.e8a52378.chunk.js.map": "/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33352b96.css",
-    "static/js/main.3f3d3e0d.js"
+    "static/css/main.17fdfef6.css",
+    "static/js/main.05a93075.js"
   ]
 }
