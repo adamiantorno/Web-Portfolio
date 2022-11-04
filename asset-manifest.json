@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.17fdfef6.css",
+    "main.css": "/static/css/main.db5b8f5e.css",
     "main.js": "/static/js/main.05a93075.js",
     "static/js/787.e8a52378.chunk.js": "/static/js/787.e8a52378.chunk.js",
     "static/media/arduino_solder.jpeg": "/static/media/arduino_solder.2954becca358aa2541bc.jpeg",
@@ -39,12 +39,12 @@
     "static/media/cftracker_input.png": "/static/media/cftracker_input.70437117eaab258f718d.png",
     "static/media/cover_cftracker.png": "/static/media/cover_cftracker.fdc58aacb48b4d1fa041.png",
     "index.html": "/index.html",
-    "main.17fdfef6.css.map": "/static/css/main.17fdfef6.css.map",
+    "main.db5b8f5e.css.map": "/static/css/main.db5b8f5e.css.map",
     "main.05a93075.js.map": "/static/js/main.05a93075.js.map",
     "787.e8a52378.chunk.js.map": "/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17fdfef6.css",
+    "static/css/main.db5b8f5e.css",
     "static/js/main.05a93075.js"
   ]
 }
