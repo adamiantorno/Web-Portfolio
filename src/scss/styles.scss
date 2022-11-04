@@ -259,6 +259,10 @@ body {
             justify-content: center;
             align-items: left;
         }
+
+        &-adventure {
+            object-fit: contain !important;
+        }
     }
 
     &-tech {
