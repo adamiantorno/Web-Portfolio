@@ -35,7 +35,7 @@ const ProjData = [
     date: "Winter 2022",
     skills: [
       "SolidWorks",
-      "Altium / Circuit Maker",
+      "Altium 365",
       "Arduino & C++",
       "CAN Bus & J1939",
       "Sourcing Components",
