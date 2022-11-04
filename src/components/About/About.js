@@ -86,7 +86,7 @@ export default function About() {
               <h3>Outside of Academia</h3>
               <Col md={6} className='about-pic-div'>
               <Image 
-                className="about-pic-adventure"  
+                className="about-adventure"  
                 src={about_adventure} 
                 alt="Adventure" />
               </Col>
