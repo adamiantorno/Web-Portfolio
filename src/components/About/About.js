@@ -6,9 +6,9 @@ import about_adventure from '../../assets/imgs/about_adventure.png'
 
 export default function About() {
   
-  const skillset_design = ['Solidworkds', 'AutoCAD', 'Adobe Creative Suite'];
+  const skillset_design = ['Solidworkds', 'AutoCAD', 'Adobe Creative Suite', 'MATLAB'];
   const skillset_prog = ['Python', 'Javascript', 'ROS (2 Foxy)', 'C++'];
-  const skillset_other = ['Git', 'Rest APIs'];
+  const skillset_other = ['Git', 'Rest APIs', 'Arduino', 'Linux (Shell)'];
 
   const metalsLink = <a 
                       href="https://impossiblemetals.com/" 
@@ -39,11 +39,11 @@ export default function About() {
                   applicable products that push the limits of technology and design.
                 </p>
                 <p>
-                  Currently, I am working as a Robotics Developer (co-op) at the start-up{" "}
-                  {metalsLink}. We are building autonomous underwater vehicles (AUVs) that harvest
-                  battery metals from the seabed without harming the environment.
+                  Most recently, I was working as a Robotics Developer at the start-up{" "}
+                  {metalsLink}. We were building autonomous underwater vehicles (AUVs) that harvest
+                  metal nodules from the seabed without harming the environment.
                 </p>
-                <p>I am seeking a 4-month internship position for Summer 2023.</p>
+                <p>I am currently seeking a 4-month internship position for Summer 2023.</p>
               </Col>
               <Col>
                 <Image
@@ -94,18 +94,17 @@ export default function About() {
                 <p> Aside from engineering and projects, I enjoy having fun with my close friends and
                   family, while also spending personal time to recharge.</p>
                 <p>
-                  I have recently gotten into
-                  both weight-lifting and rock-climbing and really enjoy going to the gym with
-                  friends in waterloo. I also an avid cook, skateboarder, and reader. I am curerntly
+                  I am very invested in
+                  both weight-lifting and rock-climbing, and really enjoy going to the gym with my
+                  friends in Waterloo. I also enjoy cooking and reading. I am curerntly
                   reading{" "}
                   <span className="italics">
-                    Structures or Why Things Fall Down by J. E. Gordon
+                    The Poppy War by R. F. Kuang
                   </span>{" "}
-                  which is an explanation on the basic dyanmics for ordinary and essential
-                  structures of society.
+                  , which is a historical fiction novel that draws its plot and politics from mid-20th-century China.
                 </p>
                 <p>
-                  I am cotinuously tinkering with this website and adding new features. I hope to
+                  I am constantly tinkering with this website and adding new features. I hope to
                   add a blog section where I can post about my latest travels, books, and other
                   interesting topics all in one place.
                 </p>
