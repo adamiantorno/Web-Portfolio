@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Document, Page } from "react-pdf";
-
-import AdamIantorno_Web_Resume from '../assets/files/AdamIantorno_Web_Resume.pdf';
+import { ResumeFile } from '../../assets';
 
 export default function Resume() {
 
@@ -17,7 +16,7 @@ export default function Resume() {
             <Row className="justify-content-sm-center">
               <Col sm={6}>
                 <Document 
-                file={AdamIantorno_Web_Resume}
+                file={ResumeFile}
                 options={{ workerSrc: "/pdf.worker.js" }}
                 >
                     <Page pageNumber={1} />

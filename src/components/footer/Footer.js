@@ -5,6 +5,8 @@ import {
   GrLinkedin,
 } from "react-icons/gr"
 
+import './footer.scss';
+
 export default function Footer() {
   return (
     <Container fluid className="footer">

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-import aboutme from '../../assets/imgs/aboutmepic.jpg';
-import about_adventure from '../../assets/imgs/about_adventure.png'
+import { about_all } from '../../assets';
+import { about_self } from '../../assets';
+
+import './about.scss';
 
 export default function About() {
   
@@ -49,7 +51,7 @@ export default function About() {
                 <Image
                   className="about-pic"
                   rounded={true}
-                  src={aboutme}
+                  src={about_self}
                   alt="Adam Iantorno Waterloo Portrait"
                 />
               </Col>
@@ -87,7 +89,7 @@ export default function About() {
               <Col md={6} className='about-pic-div'>
               <Image 
                 className="about-adventure"  
-                src={about_adventure} 
+                src={about_all} 
                 alt="Adventure" />
               </Col>
               <Col md={6} className="about-text py-3">

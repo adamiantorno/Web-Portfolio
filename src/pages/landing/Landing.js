@@ -1,6 +1,9 @@
 import React from 'react';
+
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from 'typewriter-effect';
+
+import './landing.scss';
 
 export default function Landing() {
 

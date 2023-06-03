@@ -1,13 +1,8 @@
 import React from 'react';
-import Landing from './components/Landing/Landing';
-import About  from './components/About/About';
-import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
+import { Landing, About, Experience, Projects } from './pages';
+import { Header, Footer } from './components';
 
-import './App.css';
 import './scss/styles.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

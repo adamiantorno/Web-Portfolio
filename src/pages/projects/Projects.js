@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from './ProjectCard';
-import Filter from './Filter';
+import { Filter, ProjectCard } from '../../components';
 
-import ProjData from './projectdata';
+import ProjData from '../../assets/projects/projectdata';
+
+import './projects.scss';
 
 const categories = [
   {

@@ -1,7 +1,9 @@
 import { React, useState } from 'react';
 import { Container, Row, Col, ButtonGroup, Image } from "react-bootstrap";
 
-import ExpData from './expdata';
+import ExpData from '../../assets/experience/expdata';
+
+import './experience.scss';
 
 export default function Experience() {
 

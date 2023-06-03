@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+
 import { Link } from 'react-scroll';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import AdamIantorno_Web_Resume from '../assets/files/AdamIantorno_Web_Resume.pdf';
+
+import AdamIantorno_Web_Resume from '../../assets/AdamIantorno_Web_Resume.pdf';
+
+import './header.scss';
 
 
 export default function Header() {

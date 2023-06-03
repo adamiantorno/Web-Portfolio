@@ -1,0 +1,235 @@
+@import '../../scss/variables';
+@import '../../scss/styles.scss';
+
+.job-button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: right;
+    color: $primary-colour-3;
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s;
+
+    &-active {
+        @extend .job-button;
+        background-color: $primary-colour-2;
+        color: #fff;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-colour-2;
+    }
+}
+
+.exp {
+
+    &-bubble  {
+        @extend .bubble;
+        border-radius: 0px 10px 10px 0px;
+        padding-left: 25px !important;
+
+        @media screen and (max-width: $mobile-width) {
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+
+    // Highlight Section 
+
+    &-div {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-btn-group {
+        overflow-x: auto;
+        border-radius: 0 !important;
+
+        @media screen and (min-width: $mobile-width) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+
+    &-button {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 10px 20px;
+        text-align: right;
+        color: $primary-colour-3;
+        border-radius: 5px 0 0 5px;
+        transition: 0.5s;
+
+        @media screen and (max-width: $mobile-width) {
+            text-align: center;
+            border-radius: 5px 5px 0 0 !important;
+            min-width: 130px;
+            
+            h4 {
+                font-size: 16px;
+            }
+        }
+    
+        &-active {
+            @extend .job-button;
+            background-color: $primary-colour-2;
+            color: #fff;
+        }
+    
+        &:hover {
+            color: #fff;
+            background-color: $primary-colour-2;
+        }
+    }
+
+    &-highlight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 12px;
+        height: 19.5%;
+        border-radius: 50% 0px 0px 50%;
+        background: white;
+        transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition-delay: 0.1s;
+
+        @media screen and (max-width: $mobile-width) {
+            top: auto;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            max-width: 130px;
+            border-radius: 50% 50% 0 0;
+        }
+    }
+
+    &-h-0 {
+        transform: translateY(calc($exp-highlight-height*0));
+    
+        @media screen and (max-width: $mobile-width) {
+            transform: translateX(calc($exp-highlight-width*0));
+        }
+    }
+    
+    &-h-1 {
+        transform: translateY(calc($exp-highlight-height*1));
+    
+        @media screen and (max-width: $mobile-width) {
+            transform: translateX(calc($exp-highlight-width*1));
+        }
+    }
+    
+    &-h-2 {
+        transform: translateY(calc($exp-highlight-height*2));
+    
+        @media screen and (max-width: $mobile-width) {
+            transform: translateX(calc($exp-highlight-width*2));
+        }
+    }
+    
+    &-h-3 {
+        transform: translateY(calc($exp-highlight-height*3));
+    
+        @media screen and (max-width: $mobile-width) {
+            transform: translateX(calc($exp-highlight-width*3));
+        }
+    }
+    
+    &-h-4 {
+        transform: translateY(calc($exp-highlight-height*4));
+    
+        @media screen and (max-width: $mobile-width) {
+            transform: translateX(calc($exp-highlight-width*4));
+        }
+    }
+
+    &-desc {
+        display: none;
+
+        &.exp-active {
+            display: block;
+            animation: scale-display 1s;
+        }
+
+        &.exp-inactive {
+            display: block;
+            animation: scale-display--reversed .5s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    // Job Desc Section
+
+    &-info-row {
+        margin-bottom: 12px;
+    }
+
+    &-title {
+        text-align: left;
+
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+
+    &-period {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $primary-colour-3;
+    }
+
+    &-logo {
+         max-height: 40px;
+
+        &.logo-UWAFT, &.logo-416 {
+            max-height: 70px;
+        }
+    }
+
+    &-list {
+        text-align: left;
+        line-height: 1.8;
+        margin-top: 0.5em;
+        padding: 0 !important   ;
+    }
+
+    &-item {
+        position: relative;
+        list-style-type: none;
+        margin-bottom: 0.2rem;
+        padding-left: 1.5rem;
+        text-align: left;
+        font-size: $text-standard-size;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 5px;
+            height: 11px;
+            border-width: 0 2px 2px 0;
+            border-style: solid;
+            border-color: $primary-colour-2;
+            transform-origin: bottom left;
+            transform: rotate(45deg);
+        }
+
+    }
+}
+
+@keyframes scale-display {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
