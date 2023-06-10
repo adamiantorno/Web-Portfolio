@@ -8,13 +8,13 @@ const ExpData = [
     {
         id: 0,
         company: "Impossible Metals",
-        title: "Robotics Developper",
-        period: "September 2022 - Present",
+        title: "Robotics Developer",
+        period: "September - December 2022",
         link: "https://impossiblemetals.com/",
         img: IMLogo,
         desc: ["Developping vehicle control, state estimation, and simulation codes working within ROS and Python. Improving the performace of third iteration of vehicle leading to testing infront of customers.",
                 "Testing sensors such as high grade DVL/USBL/Depth, that will be integrated into third and fourth iteration of vehicle.",
-                "Assisting in vehicle deployments on the Geogian by activaitng vehicle housings, setting control system parameters, and record ros bag files."],
+                "Assisting in vehicle deployments on the Geogian by activating vehicle housings, setting control system parameters, and record ros bag files."],
         techonologies: ['Python', 'ROS (2 Foxy)', 'Rasberry Pi']
         
     },
@@ -46,8 +46,8 @@ const ExpData = [
     {
         id: 3,
         company: "UWAFT",
-        title: "Sensor Diagnostic Subteam Lead",
-        period: "September 2019 - January 2020",
+        title: "Sensor Diagnostics Team Lead",
+        period: "September 2019 - August 2020",
         link: "https://uwaterloo.ca/sedra-student-design-centre/directory-teams/university-waterloo-alternative-fuels-team-uwaft",
         img: UwaftLogo,
         desc: ["Programmed C++ radar diagnostics algorithm in ROS which was implemented into vehicles autonomous driving architecture.",
@@ -65,7 +65,7 @@ const ExpData = [
         desc: ["Developped Python script wth NumPy & Pandas to analyze data from over 1000 machine operations for setting error ranges of ultrasonic sensors.",
                 "Operated ultrasonic machine to perform quality assurance test and generate machine sequence files.",
                 "Created product marketing card with Microsoft Office, attracting 2 large automotive clients for business. "],
-        techonologies: ['Python (Numpy & Pandas)', 'Microsoft Excel', '']
+        techonologies: ['Python (Numpy & Pandas)', 'Microsoft Excel']
     },
     
 ]

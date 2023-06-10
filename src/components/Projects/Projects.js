@@ -34,8 +34,8 @@ export default function Projects() {
   const [activeGenre, setActiveGenre] = useState(0);
   
   return (
-    <section className="project-section" id="projects">
-      <Container className="project-div">
+    <section className="section-page" id="projects">
+      <Container className="py-5">
         <Container fluid>
           <Row>
             <Col>
