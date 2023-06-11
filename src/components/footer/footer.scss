@@ -4,35 +4,10 @@
 .footer {
     background-color: $primary-dark;
     color: #fff;
-    padding: 20px 0;
+    padding: 50px 15vw !important;
 
-    &-title {
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2em;
-    }
-
-    &-socialicons {
-        margin-top: 15px;
-        margin-bottom: 30px;
-
-        a {
-            background-color: #fff;
-            border-radius: 100%;
-            color: $primary-colour-1;
-            display: inline-block;
-            font-size: 2rem;
-            height: 4.2rem;
-            width: 4.2rem;
-            margin: 0 1.2rem;
-            text-align: center;
-            line-height: 4rem;
-
-            &:hover {
-                color: #fff;
-                background-color: $primary-colour-1;
-            }
-        }
+    &-text {
+        text-align: left;
+        padding: 0px 0px 20px 0px;
     }
 }

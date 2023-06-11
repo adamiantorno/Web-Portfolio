@@ -1,41 +1,34 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  GrGithub,
-  GrLinkedin,
-} from "react-icons/gr"
 
 import './footer.scss';
+
 
 export default function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
         <Col>
-          <h3 className="footer-title">Contact Me</h3>
+          <Row className="footer-text">
+            <h3>ADAM IANTORNO</h3>
+            <span>
+              A versatile engineering student passionate about building innovating and sustainable
+              products that push the limits of techonology and design
+            </span>
+          </Row>
+        </Col>
+        <Col md={2}></Col>
+        <Col>
+          <Row className="footer-text">
+            <h4>CONTACT</h4>
+            <span>aiantorno@uwaterloo.ca</span>
+          </Row>
         </Col>
       </Row>
+      <hr></hr>
       <Row>
         <Col>
-          <div className='footer-socialicons'>
-            <a href="https://www.github.com/adamiantorno">
-              <GrGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/adamiantorno">
-              <GrLinkedin />
-            </a>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h4>Toronto, ON. Canada</h4>
-        </Col>
-        <Col>
-          <h4>Designed and Built by Adam Iantorno</h4>
-        </Col>
-        <Col>
-          <h4>aiantorn@uwaterloo.ca</h4>
+          <span>&copy; Copyright 2023. Designed and Built by Adam Iantorno</span>
         </Col>
       </Row>
     </Container>
