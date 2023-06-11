@@ -5,6 +5,7 @@ import ExpData from '../../assets/experience/expdata';
 
 import './experience.scss';
 
+
 export default function Experience() {
 
   const [activeExpId, setActiveExpId] = useState(0);
@@ -86,4 +87,4 @@ export default function Experience() {
       </Container>
     </section>
   );
-}
+};

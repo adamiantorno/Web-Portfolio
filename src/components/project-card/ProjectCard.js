@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, Col } from 'react-bootstrap';
 
+
 export default function ProjectCard({ item }) {
   const [show, setShow] = useState(false);
 
@@ -44,4 +45,4 @@ export default function ProjectCard({ item }) {
       </Modal>
     </Col>
   );
-}
+};

@@ -25,7 +25,7 @@ import cover_hil from './imgs/cover_hil.jpg';
 import arduino_initial from './imgs/arduino_initial.png';
 import arduino_cad from './imgs/arduino_cad.png';
 import arduino_solder from './imgs/arduino_solder.jpeg';
-import cover_arduino from './imgs/cover_arduino.jpg'
+import cover_arduino from './imgs/cover_arduino.jpg';
 
 const ProjData = [
   {

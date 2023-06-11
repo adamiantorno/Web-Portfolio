@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 import './landing.scss';
 
+
 export default function Landing() {
 
   const adjectives = ['Engineering Student', 'Innovator', 'Self-Starter']
@@ -33,4 +34,4 @@ export default function Landing() {
       </Container>
     </section>
   );
-}
+};

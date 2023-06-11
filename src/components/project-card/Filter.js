@@ -16,21 +16,21 @@ export default function Filter({categories, projects, setFiltered, activeGenre, 
         setFiltered(filtered);
     }, [activeGenre, projects, setFiltered]);    
 
-return (
-    <Col className='filter'>
-        <span className='filter-title'>Filter by</span>
-        {categories.map((cat) => {
-            return (
+    return (
+        <Col className='filter'>
+            <span className='filter-title'>Filter by</span>
+            {categories.map((cat) => {
+                return (
 
-                <button
-                  key={cat.id}
-                  className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
-                  onClick={() => setActiveGenre(cat.id)}
-                >
-                  {cat.name}
-                </button>
-            );
-        })}  
-    </Col>
-)
-}
+                    <button
+                    key={cat.id}
+                    className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
+                    onClick={() => setActiveGenre(cat.id)}
+                    >
+                    {cat.name}
+                    </button>
+                );
+            })}  
+        </Col>
+    );
+};

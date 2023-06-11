@@ -6,6 +6,7 @@ import { about_self } from '../../assets';
 
 import './about.scss';
 
+
 export default function About() {
   
   const skillset_design = ['Solidworkds', 'AutoCAD', 'Adobe Creative Suite', 'MATLAB'];
@@ -117,4 +118,4 @@ export default function About() {
       </Container>
     </section>
   );
-}
+};

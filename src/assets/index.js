@@ -9,6 +9,5 @@ export {
     ProjData,
     ExpData,
     about_all,
-    about_self
+    about_self,
 };
-

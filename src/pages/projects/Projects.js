@@ -6,6 +6,7 @@ import ProjData from '../../assets/projects/projectdata';
 
 import './projects.scss';
 
+
 const categories = [
   {
     "id": 0,
@@ -68,4 +69,4 @@ export default function Projects() {
       </Container>
     </section>
   );
-}
+};

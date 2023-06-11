@@ -1,8 +1,9 @@
-import IMLogo from './imgs/IMLogo.png'
-import ElectransLogo from './imgs/ElectransLogo.png'
-import GrantMatchLogo from './imgs/GrantmatchLogo.png'
-import UwaftLogo from './imgs/UwaftLogo.jpg'
-import FLogo from './imgs/416Logo.jpg'
+import IMLogo from './imgs/IMLogo.png';
+import ElectransLogo from './imgs/ElectransLogo.png';
+import GrantMatchLogo from './imgs/GrantmatchLogo.png';
+import UwaftLogo from './imgs/UwaftLogo.jpg';
+import FLogo from './imgs/416Logo.jpg';
+
 
 const ExpData = [
     {
@@ -66,8 +67,7 @@ const ExpData = [
                 "Operated ultrasonic machine to perform quality assurance test and generate machine sequence files.",
                 "Created product marketing card with Microsoft Office, attracting 2 large automotive clients for business. "],
         techonologies: ['Python (Numpy & Pandas)', 'Microsoft Excel']
-    },
-    
-]
+    },  
+];
 
-export default ExpData
+export default ExpData;
