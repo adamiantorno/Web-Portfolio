@@ -1,40 +1,38 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap';
 import { Filter, ProjectCard } from '../../components';
 
 import ProjData from '../../assets/projects/projectdata';
 
 import './projects.scss';
 
-
 const categories = [
   {
-    "id": 0,
-    "name": "All"
+    id: 0,
+    name: 'All',
   },
   {
-    "id": 10,
-    "name": "Mechanical"
+    id: 10,
+    name: 'Mechanical',
   },
   {
-    "id": 20,
-    "name": "Electrical"
+    id: 20,
+    name: 'Electrical',
   },
   {
-    "id": 30,
-    "name": "Software"
+    id: 30,
+    name: 'Software',
   },
   {
-    "id": 40,
-    "name": "Other"
-  }
-]
+    id: 40,
+    name: 'Other',
+  },
+];
 
 export default function Projects() {
-
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
-  
+
   return (
     <section className="section-page" id="projects">
       <Container className="py-5">
@@ -44,7 +42,7 @@ export default function Projects() {
               <h2 className="section-title-white">My Recent Works</h2>
             </Col>
           </Row>
-          <Row className='project-filter'>
+          <Row className="project-filter">
             <Filter
               categories={categories}
               projects={ProjData}
@@ -55,18 +53,16 @@ export default function Projects() {
             />
           </Row>
           <Row>
-            {filtered.map((item) => {
-              return (
-                <ProjectCard
-                  item={item}
-                  categories={categories}
-                  className="project-card"
-                />
-              );
-            })}
+            {filtered.map((item) => (
+              <ProjectCard
+                item={item}
+                categories={categories}
+                className="project-card"
+              />
+            ))}
           </Row>
         </Container>
       </Container>
     </section>
   );
-};
+}

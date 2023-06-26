@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Document, Page } from "react-pdf";
-import { ResumeFile } from '../../assets';
-
+import { Document, Page } from 'react-pdf';
+import { AdamIantornoWebResume } from '../../assets';
 
 export default function Resume() {
   return (
-    <div className='page-section'>
-      <Container className='bubble'>
+    <div className="page-section">
+      <Container className="bubble">
         <Row>
           <Col>
             <Button>Download</Button>
@@ -15,16 +14,15 @@ export default function Resume() {
         </Row>
         <Row className="justify-content-sm-center">
           <Col sm={6}>
-            <Document 
-            file={ResumeFile}
-            options={{ workerSrc: "/pdf.worker.js" }}
+            <Document
+              file={AdamIantornoWebResume}
+              options={{ workerSrc: '/pdf.worker.js' }}
             >
-                <Page pageNumber={1} />
-          </Document>
+              <Page pageNumber={1} />
+            </Document>
           </Col>
         </Row>
-
       </Container>
     </div>
   );
-};
+}

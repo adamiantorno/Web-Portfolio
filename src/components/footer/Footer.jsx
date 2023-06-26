@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './footer.scss';
-
 
 export default function Footer() {
   return (
@@ -12,12 +11,13 @@ export default function Footer() {
           <Row className="footer-text">
             <h3>ADAM IANTORNO</h3>
             <span>
-              A versatile engineering student passionate about building innovating and sustainable
-              products that push the limits of techonology and design
+              A versatile engineering student passionate about building
+              innovating and sustainable products that push the limits of
+              techonology and design
             </span>
           </Row>
         </Col>
-        <Col md={2}></Col>
+        <Col md={2} />
         <Col>
           <Row className="footer-text">
             <h4>CONTACT</h4>
@@ -25,12 +25,14 @@ export default function Footer() {
           </Row>
         </Col>
       </Row>
-      <hr></hr>
+      <hr />
       <Row>
         <Col>
-          <span>&copy; Copyright 2023. Designed and Built by Adam Iantorno</span>
+          <span>
+            &copy; Copyright 2023. Designed and Built by Adam Iantorno
+          </span>
         </Col>
       </Row>
     </Container>
   );
-};
+}

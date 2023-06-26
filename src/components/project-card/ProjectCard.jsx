@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button, Col } from 'react-bootstrap';
 
-
 export default function ProjectCard({ item }) {
   const [show, setShow] = useState(false);
 
@@ -10,15 +9,15 @@ export default function ProjectCard({ item }) {
 
   return (
     <Col md={4}>
-      <button onClick={handleShow} className={"card-main card-" + item.id}>
-        <div className="card-img"></div>
-        <div className="card-img-hovered"></div>
+      <Button onClick={handleShow} className={`card-main card-${item.id}`}>
+        <div className="card-img" />
+        <div className="card-img-hovered" />
         <div className="card-info">
           <h1 className="card-title">{item.title}</h1>
           <span className="card-date">{item.date}</span>
-          <h5 className='card-show'>- Show Project -</h5>
+          <h5 className="card-show">- Show Project -</h5>
         </div>
-      </button>
+      </Button>
 
       <Modal
         show={show}
@@ -29,9 +28,9 @@ export default function ProjectCard({ item }) {
         <Modal.Header closeButton>
           <Modal.Title>
             <h1>{item.title}</h1>
-            <div className='tags'>
+            <div className="tags">
               {item.skills.map((skill) => (
-                <span className='tag italics'>{skill}</span>
+                <span className="tag italics">{skill}</span>
               ))}
             </div>
           </Modal.Title>
@@ -45,4 +44,4 @@ export default function ProjectCard({ item }) {
       </Modal>
     </Col>
   );
-};
+}

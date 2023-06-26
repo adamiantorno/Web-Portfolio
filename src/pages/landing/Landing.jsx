@@ -1,25 +1,23 @@
 import React from 'react';
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 
 import './landing.scss';
 
-
 export default function Landing() {
-
-  const adjectives = ['Engineering Student', 'Innovator', 'Self-Starter']
+  const adjectives = ['Engineering Student', 'Innovator', 'Self-Starter'];
 
   return (
-    <section id='home'>
-      <Container fluid className='home-bg'>
-        <Container className='home-main'>
+    <section id="home">
+      <Container fluid className="home-bg">
+        <Container className="home-main">
           <Row>
-            <Col className='home-title'>
-              <h1 className='name'>Adam</h1>
-              <h1 className='name'>Iantorno</h1>
+            <Col className="home-title">
+              <h1 className="name">Adam</h1>
+              <h1 className="name">Iantorno</h1>
               <div>
-              <Typewriter
+                <Typewriter
                   options={{
                     strings: adjectives,
                     autoStart: true,
@@ -34,4 +32,4 @@ export default function Landing() {
       </Container>
     </section>
   );
-};
+}
