@@ -2,10 +2,6 @@
 @import '../../scss/styles.scss';
 
 .about {
-  &-info {
-    margin-bottom: 25px;
-  }
-
   &-text {
     font-size: $text-standard-size;
     text-align: left;
@@ -21,7 +17,9 @@
   }
 
   &-pic {
-    height: 34vh;
+    &-self {
+      height: 34vh;
+    }
 
     &-div {
       display: flex;
@@ -36,8 +34,6 @@
   }
 
   &-tech {
-    margin-bottom: 20px;
-
     span {
       font-size: 1.75em;
       font-weight: bold;
@@ -83,16 +79,6 @@
           transform: rotate(45deg);
         }
       }
-    }
-  }
-
-  &-fun {
-    h3 {
-      color: $primary-colour-2;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 2em;
-      margin-bottom: 20px;
     }
   }
 }

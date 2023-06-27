@@ -13,21 +13,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif !important;
-}
-
-body {
   overflow-x: hidden;
-}
-
-.App {
-  text-align: center;
+  text-align: center !important;
 }
 
 .section {
   &-page {
     min-height: 100vh;
-    background-color: $primary-colour-1;
+    background-color: $background-colour-1;
     padding: $nav-size 0;
+  }
+
+  &-div {
+    display: flex;
+    justify-content: center;
   }
 
   &-title {
@@ -36,12 +35,17 @@ body {
     font-weight: bold;
     font-size: 3em;
     margin-bottom: 20px;
-
-    &-white {
-      @extend .section-title;
-      color: #fff;
-    }
   }
+
+  &-subtitle {
+    @extend .section-title;
+    color: $primary-colour-2;
+    font-size: 2em;
+  }
+}
+
+.splitter {
+  margin: 30px 0px 20px;
 }
 
 .bubble {
