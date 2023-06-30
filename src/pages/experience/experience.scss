@@ -1,48 +1,28 @@
 @import '../../scss/variables';
 @import '../../scss/styles.scss';
 
-.job-button {
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  padding: 10px 20px;
-  text-align: right;
-  color: $primary-colour-3;
-  border-radius: 5px 0 0 5px;
-  transition: 0.5s;
-
-  &-active {
-    @extend .job-button;
-    background-color: $primary-colour-2;
-    color: #fff;
-  }
-
-  &:hover {
-    color: #fff;
-    background-color: $primary-colour-2;
-  }
+#experience {
+  min-height: 65vh !important;
+  padding-top: 15vh;
 }
 
 .exp {
-  &-bubble {
-    @extend .bubble;
-    border-radius: 0px 10px 10px 0px;
-    padding-left: 25px !important;
-
-    @media screen and (max-width: $mobile-width) {
-      border-radius: 0px 0px 10px 10px;
-    }
-  }
-
-  // Highlight Section
-
   &-div {
     display: flex;
     align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  // Highlight Section
+  &-jobs {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px !important;
   }
 
   &-btn-group {
     overflow-x: auto;
+    overflow-y: hidden;
     border-radius: 0 !important;
 
     @media screen and (min-width: $mobile-width) {
@@ -56,31 +36,28 @@
     width: 100%;
     border: none;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: right;
     color: $primary-colour-3;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
     transition: 0.5s;
+    line-height: 10px;
 
     @media screen and (max-width: $mobile-width) {
       text-align: center;
       border-radius: 5px 5px 0 0 !important;
       min-width: 130px;
-
-      h4 {
-        font-size: 16px;
-      }
     }
 
-    &-active {
-      @extend .job-button;
-      background-color: $primary-colour-2;
-      color: #fff;
-    }
-
+    &-active,
     &:hover {
-      color: #fff;
-      background-color: $primary-colour-2;
+      @extend .exp-button;
+      background-color: $primary-colour-6;
+      color: $primary-colour-1;
+    }
+
+    span {
+      font-size: 13px;
     }
   }
 
@@ -89,10 +66,9 @@
     top: 0;
     right: 0;
     z-index: 10;
-    width: 12px;
-    height: 19.5%;
-    border-radius: 50% 0px 0px 50%;
-    background: white;
+    width: 6px;
+    height: 20%;
+    background: $primary-colour-1;
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-delay: 0.1s;
 
@@ -104,6 +80,16 @@
       height: 15px;
       max-width: 130px;
       border-radius: 50% 50% 0 0;
+    }
+
+    &-background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      z-index: 5;
+      background-color: $primary-colour-5;
     }
   }
 
@@ -146,16 +132,19 @@
       transform: translateX(calc($exp-highlight-width * 4));
     }
   }
+}
 
+.job {
   &-desc {
     display: none;
+    margin-left: 15px !important;
 
-    &.exp-active {
+    &.job-active {
       display: block;
       animation: scale-display 1s;
     }
 
-    &.exp-inactive {
+    &.job-inactive {
       display: block;
       animation: scale-display--reversed 0.5s;
       animation-fill-mode: forwards;
@@ -164,7 +153,7 @@
 
   // Job Desc Section
 
-  &-info-row {
+  &-info {
     margin-bottom: 12px;
   }
 
@@ -195,30 +184,30 @@
     text-align: left;
     line-height: 1.8;
     margin-top: 0.5em;
-    padding: 0 !important   ;
-  }
+    padding: 0 !important;
 
-  &-item {
-    position: relative;
-    list-style-type: none;
-    margin-bottom: 0.2rem;
-    padding-left: 1.5rem;
-    text-align: left;
-    font-size: $text-standard-size;
+    li {
+      position: relative;
+      list-style-type: none;
+      margin-bottom: 0.2rem;
+      padding-left: 1.5rem;
+      text-align: left;
+      font-size: $text-standard-size;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 5px;
-      height: 11px;
-      border-width: 0 2px 2px 0;
-      border-style: solid;
-      border-color: $primary-colour-2;
-      transform-origin: bottom left;
-      transform: rotate(45deg);
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 5px;
+        height: 11px;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        border-color: $primary-colour-2;
+        transform-origin: bottom left;
+        transform: rotate(45deg);
+      }
     }
   }
 }
