@@ -1,13 +1,6 @@
 @import '../../scss/variables';
 @import '../../scss/styles.scss';
 
-.project {
-  &-filter {
-    margin-bottom: 20px;
-    display: flex;
-  }
-}
-
 .filter {
   @media screen and (max-width: $mobile-width) {
     display: flex;
@@ -15,38 +8,32 @@
   }
 
   &-title {
-    color: white;
-    font-size: 2rem;
-    padding: 0px 20px 0px 0px;
+    color: $primary-colour-1;
+    font-size: 1rem;
   }
 
   &-button {
-    color: $primary-colour-5;
-    font-size: 2rem;
+    color: $primary-colour-2;
+    font-size: 1.5rem;
     font-weight: 500;
     background: none;
     border: none;
     border-radius: 5px;
     padding: 2px 20px 2px 25px;
+    margin: 0 8px;
 
     @media screen and (max-width: $mobile-width) {
       font-size: 1.5rem;
       margin: auto;
     }
 
-    &::before {
-      content: '//';
-      padding-right: 16px;
-    }
-
     &:hover {
-      color: white;
-      background-color: $primary-colour-dark;
       transition: 0.6s;
     }
 
     &.active {
-      background-color: #fff;
+      background-color: $primary-colour-6;
+      font-weight: 550;
       color: $primary-colour-1;
     }
   }
@@ -61,6 +48,7 @@
     border: none;
     border-radius: 5%;
     transition: all 300ms ease-in-out;
+    background-color: $primary-colour-1;
 
     @media screen and (max-width: $large-width) {
       max-width: 100%;
@@ -140,13 +128,13 @@
     font-size: 1.5rem;
     padding-bottom: 0.75rem;
     transition: all 350ms ease-in-out;
-    color: $primary-colour-1;
+    color: #fff !important;
   }
 
   &-date {
     padding-bottom: 0.75rem;
     transition: all 250ms ease-in-out;
-    color: $primary-colour-3;
+    color: $primary-colour-5;
     font-weight: 400;
     font-size: 1.1rem;
   }
@@ -258,7 +246,7 @@
     font-size: $text-standard-size;
 
     @media screen and (max-width: $mobile-width) {
-      font-size: 1em;
+      font-size: 1rem;
     }
   }
 
@@ -267,7 +255,7 @@
     text-indent: 40px;
 
     @media screen and (max-width: $mobile-width) {
-      font-size: 1em;
+      font-size: 1rem;
     }
   }
 
@@ -277,7 +265,7 @@
 
   figcaption {
     @extend .italics;
-    font-size: 16px;
+    font-size: 1px;
     margin: 0 auto 0 auto;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -291,7 +279,7 @@
   align-items: center;
 
   .tag {
-    font-size: 0.5em !important;
+    font-size: 0.75rem !important;
     display: block;
     padding: 0.3em 0.85em;
     margin: 0.5em;
@@ -301,7 +289,7 @@
     transition-timing-function: cubic-bezier(0.45, -0.85, 0.55, -0.45);
 
     @media screen and (max-width: $mobile-width) {
-      font-size: 0.3em !important;
+      font-size: 0.3rem !important;
       border: 2px solid $primary-colour-4;
     }
   }
@@ -309,7 +297,7 @@
 
 .center-table {
   td {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 

@@ -1,68 +1,62 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Filter, ProjectCard } from '../../components';
 
+import { Filter, ProjectCard } from '../../components';
 import ProjData from '../../assets/projects/projectdata';
 
 import './projects.scss';
 
-const categories = [
-  {
-    id: 0,
-    name: 'All',
-  },
-  {
-    id: 10,
-    name: 'Mechanical',
-  },
-  {
-    id: 20,
-    name: 'Electrical',
-  },
-  {
-    id: 30,
-    name: 'Software',
-  },
-  {
-    id: 40,
-    name: 'Other',
-  },
-];
-
 export default function Projects() {
   const [filtered, setFiltered] = useState([]);
-  const [activeGenre, setActiveGenre] = useState(0);
+  const [activeGenre, setActiveGenre] = useState('All');
 
   return (
     <section className="section-page" id="projects">
-      <Container className="py-5">
+      <Container>
         <Container fluid>
           <Row>
             <Col>
-              <h2 className="section-title-white">My Recent Works</h2>
+              <h2 className="section-title">My Projects</h2>
             </Col>
           </Row>
-          <Row className="project-filter">
+          <Row>
             <Filter
-              categories={categories}
               projects={ProjData}
-              filtered={filtered}
               setFiltered={setFiltered}
               activeGenre={activeGenre}
               setActiveGenre={setActiveGenre}
             />
           </Row>
+
           <Row>
-            {filtered.map((item) => (
-              <ProjectCard
-                item={item}
-                categories={categories}
-                className="project-card"
-              />
-            ))}
+            {filtered.map((item) => {
+              return (
+                <ProjectCard
+                  key={item.id}
+                  item={item}
+                  className="project-card"
+                />
+              );
+            })}
           </Row>
         </Container>
       </Container>
     </section>
   );
 }
+
+// import React, { useState } from 'react';
+// import { Container, Row, Col } from 'react-bootstrap';
+// import { motion, AnimatePresence } from 'framer-motion';
+
+// import ProjData from '../../assets/projects/projectdata';
+
+// import './projects.scss';
+
+// export default function Projects() {
+//   const categories = ['All', 'Mechanical', 'Electrical', 'Software', 'Other'];
+
+//   return (
+
+//   );
+// }
