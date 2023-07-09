@@ -17,6 +17,10 @@ body {
   text-align: center !important;
 }
 
+.App {
+  position: relative;
+}
+
 .section {
   &-page {
     margin: 5vh 0;
@@ -33,26 +37,19 @@ body {
     color: $primary-colour-1;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
 
   &-subtitle {
     @extend .section-title;
     color: $primary-colour-2;
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 
 .splitter {
   margin: 30px 0px 20px;
-}
-
-.bubble {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 40px 30px;
-  box-shadow: 1px 1px 20px 8px rgba(50, 46, 68, 0.55);
 }
 
 .italics {
@@ -78,7 +75,7 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: $primary-colour-1;
