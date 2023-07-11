@@ -62,7 +62,7 @@
     right: 0;
     z-index: 10;
     width: 6px;
-    height: 20%;
+    height: 16.6%;
     background: $primary-colour-1;
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-delay: 0.1s;
@@ -125,6 +125,46 @@
 
     @media screen and (max-width: $mobile-width) {
       transform: translateX(calc($exp-highlight-width * 4));
+    }
+  }
+
+  &-h-0 {
+    transform: translateY(calc($exp-highlight-height * 0));
+
+    @media screen and (max-width: $mobile-width) {
+      transform: translateX(calc($exp-highlight-width * 0));
+    }
+  }
+
+  &-h-1 {
+    transform: translateY(calc($exp-highlight-height * 1));
+
+    @media screen and (max-width: $mobile-width) {
+      transform: translateX(calc($exp-highlight-width * 1));
+    }
+  }
+
+  &-h-2 {
+    transform: translateY(calc($exp-highlight-height * 2));
+
+    @media screen and (max-width: $mobile-width) {
+      transform: translateX(calc($exp-highlight-width * 2));
+    }
+  }
+
+  &-h-3 {
+    transform: translateY(calc($exp-highlight-height * 3));
+
+    @media screen and (max-width: $mobile-width) {
+      transform: translateX(calc($exp-highlight-width * 3));
+    }
+  }
+
+  &-h-5 {
+    transform: translateY(calc($exp-highlight-height * 5));
+
+    @media screen and (max-width: $mobile-width) {
+      transform: translateX(calc($exp-highlight-width * 5));
     }
   }
 }

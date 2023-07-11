@@ -3,24 +3,39 @@ import ElectransLogo from './imgs/ElectransLogo.png';
 import GrantMatchLogo from './imgs/GrantmatchLogo.png';
 import UwaftLogo from './imgs/UwaftLogo.jpg';
 import FLogo from './imgs/416Logo.jpg';
+import JuniorAILogo from './imgs/JuniorAILogo.png';
 
 const ExpData = [
   {
     id: 0,
+    company: 'JuniorAI',
+    title: 'Sofware Engineering Intern',
+    period: 'May 2023 - Present',
+    link: '',
+    img: JuniorAILogo,
+    desc: [
+      'Building core functionality and infrastructure for custom Microsoft Word Add-in that uses machine learning to perform operations on document based on user command/queries',
+      'Spearheaded development of autocomplete/predictive text feature of user queries based on n-gram natural language algorithm; built with Python and Flask API.',
+      'Programming key UI features and updating back-end functionality based on user feedback',
+    ],
+    techonologies: ['React', 'Python', 'Machine Learning', 'REST APIs'],
+  },
+  {
+    id: 1,
     company: 'Impossible Metals',
     title: 'Robotics Developer',
     period: 'September - December 2022',
     link: 'https://impossiblemetals.com/',
     img: IMLogo,
     desc: [
-      'Developping vehicle control, state estimation, and simulation codes working within ROS and Python. Improving the performace of third iteration of vehicle leading to testing infront of customers.',
-      'Testing sensors such as high grade DVL/USBL/Depth, that will be integrated into third and fourth iteration of vehicle.',
-      'Assisting in vehicle deployments on the Geogian by activating vehicle housings, setting control system parameters, and record ros bag files.',
+      'Developped vehicle control, state estimation, and simulation codes working within ROS and Python. Improved the performace of third iteration of vehicle leading to testing infront of customers.',
+      'Programmed 1 DOF ARM in ROS2 & Python, controlling linear actuators and cameras to test end-effector',
+      'Assisted in vehicle deployments on the Georgian by activating vehicle housings, setting control system parameters, and recording ros bag files.',
     ],
     techonologies: ['Python', 'ROS (2 Foxy)', 'Rasberry Pi'],
   },
   {
-    id: 1,
+    id: 2,
     company: 'Electrans',
     title: 'Mechatronics Engineer',
     period: 'January - April 2022',
@@ -35,7 +50,7 @@ const ExpData = [
     techonologies: ['Solidworks', 'Arduino & C++', 'Circuit Maker'],
   },
   {
-    id: 2,
+    id: 3,
     company: 'GrantMatch',
     title: 'Junior Software Engineer',
     period: 'May - October 2021',
@@ -49,7 +64,7 @@ const ExpData = [
     techonologies: ['Python (Django)', 'VueJS', 'SQL'],
   },
   {
-    id: 3,
+    id: 4,
     company: 'UWAFT',
     title: 'Sensor Diagnostics Team Lead',
     period: 'September 2019 - August 2020',
@@ -63,7 +78,7 @@ const ExpData = [
     techonologies: ['C++', 'ROS'],
   },
   {
-    id: 4,
+    id: 5,
     company: '416 Automation',
     title: 'Quality Assurance Engineer',
     period: 'January - April 2020',
