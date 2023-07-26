@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    padding: 20px 0px;
 
     p {
       margin-bottom: 12px;
@@ -18,7 +19,11 @@
 
   &-pic {
     &-self {
-      height: 34vh;
+      height: 50vh;
+    }
+
+    &-fun {
+      height: 55vh;
     }
 
     &-div {

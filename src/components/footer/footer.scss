@@ -1,12 +1,50 @@
 @import '../../scss/variables';
 
 .footer {
-  background-color: $primary-dark;
-  color: #fff;
-  padding: 50px 15vw !important;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    height: auto;
+    min-height: 70px;
+    text-align: center;
+  }
 
-  &-text {
-    text-align: left;
-    padding: 0px 0px 20px 0px;
+  &-social-links {
+    display: none;
+
+    @media (min-width: $mobile-width) {
+      display: block;
+      width: 100%;
+      max-width: 270px;
+      margin: 0 auto 10px;
+      color: $primary-colour-1;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      a {
+        padding: 10px;
+        svg {
+          color: $primary-colour-1;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &-credits {
+    background-color: $primary-dark;
+    color: #fff;
+    padding: 50px 15vw !important;
+
+    .credit-text {
+      text-align: left;
+      padding: 0px 0px 20px 0px;
+    }
   }
 }

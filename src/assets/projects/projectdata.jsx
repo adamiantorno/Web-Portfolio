@@ -31,6 +31,35 @@ import coverArduino from './imgs/coverArduino.jpg';
 
 const ProjData = [
   {
+    id: 9,
+    title: 'Autonomous Robot Arm',
+    category_ids: ['Mechanical', 'Electrical', 'Software'],
+    date: 'Spring 2023',
+    skills: [
+      'SolidWorks',
+      '3D Printing',
+      'Motor Controls',
+      'Arduino',
+      'Python (OpenCV)',
+    ],
+    body: (
+      <Container>
+        <Row>
+          <Col>
+            My favourite course during my junior year at Waterloo was definitely
+            ME 380. The course was based on a single project that took the term.
+            Each group was taked to build a Pick and Place Robot Manipulator
+            with specific constraints and requirements. I really enjoyed how
+            this course made us experiecne each aspect of the design process
+            mainly the troubleshooting. It was also really interesting to see
+            the design decisions and final projects of the other groups in
+            comparison to ours
+          </Col>
+        </Row>
+      </Container>
+    ),
+  },
+  {
     id: '1',
     title: 'Hardware In Loop Testing Fixture',
     category_ids: ['Mechanical', 'Electrical'],
