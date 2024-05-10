@@ -1,31 +1,32 @@
 import { Container, Col, Row, Table } from "react-bootstrap";
 
-import uwaft_group from "../../assets/imgs/uwaft_group.jpg";
-import cftracker_graph1 from "../../assets/imgs/cftracker_graph1.png";
-import cftracker_graph2 from "../../assets/imgs/cftracker_graph2.png";
-import cftracker_flow from "../../assets/imgs/cftracker_flow.png";
-import cftracker_input from "../../assets/imgs/cftracker_input.png";
-import cover_cftracker from "../../assets/imgs/cover_cftracker.png";
-import cftracker_races from "../../assets/imgs/cftracker_races.png";
-import cftracker_rshow from "../../assets/imgs/cftracker_rshow.png";
-import cftracker_friends from "../../assets/imgs/cftracker_friends.png";
-import cover_bracket from "../../assets/imgs/cover_bracket.jpg";
-import bracket_display from "../../assets/imgs/bracket_display.png";
-import quad_circuitschem from "../../assets/imgs/quad_circuitschem.jpg";
-import quad_components from "../../assets/imgs/quad_components.jpg";
-import quad_circuitboard from "../../assets/imgs/quad_circuitboard.png";
-import cover_quad from "../../assets/imgs/cover_quad.png";
-import quad_motorarm from "../../assets/imgs/quad_motorarm.jpg";
-import hil_CANFrame from "../../assets/imgs/hil_CANFrame.png";
-import hil_mounts from "../../assets/imgs/hil_mounts.png";
-import hil_cad from "../../assets/imgs/hil_cad.png";
-import hil_arduinobread from "../../assets/imgs/hil_arduinobread.jpg";
-import hil_arduinocircuit from "../../assets/imgs/hil_arduinocircuit.png";
-import cover_hil from '../../assets/imgs/cover_hil.jpg';
-import arduino_initial from '../../assets/imgs/arduino_initial.png';
-import arduino_cad from '../../assets/imgs/arduino_cad.png';
-import arduino_solder from '../../assets/imgs/arduino_solder.jpeg';
-import cover_arduino from '../../assets/imgs/cover_arduino.jpg'
+import uwaftGroup from "./imgs/uwaftGroup.jpg";
+import cftrackerGraph1 from "./imgs/cftrackerGraph1.png";
+import cftrackerGraph2 from "./imgs/cftrackerGraph2.png";
+import cftrackerFlow from "./imgs/cftrackerFlow.png";
+import cftrackerInput from "./imgs/cftrackerInput.png";
+import coverCftracker from "./imgs/coverCftracker.png";
+import cftrackerRaces from "./imgs/cftrackerRaces.png";
+import cftrackerShow from "./imgs/cftrackerShow.png";
+import cftrackerFriends from "./imgs/cftrackerFriends.png";
+import coverBracket from "./imgs/coverBracket.jpg";
+import bracketDisplay from "./imgs/bracketDisplay.png";
+import quadCircuitSchem from "./imgs/quadCircuitSchem.jpg";
+import quadComponents from "./imgs/quadComponents.jpg";
+import quadCircuitBoard from "./imgs/quadCircuitBoard.png";
+import coverQuad from "./imgs/coverQuad.png";
+import quadMotorArm from "./imgs/quadMotorArm.jpg";
+import hilCANFrame from "./imgs/hilCANFrame.png";
+import hilMounts from "./imgs/hilMounts.png";
+import hilCad from "./imgs/hilCad.png";
+import hilArduinoBread from "./imgs/hilArduinoBread.jpg";
+import hilArduinoCircuit from "./imgs/hilArduinoCircuit.png";
+import coverHil from "./imgs/coverHil.jpg";
+import arduinoInitial from "./imgs/arduinoInitial.png";
+import arduinoCad from "./imgs/arduinoCad.png";
+import arduinoSolder from "./imgs/arduinoSolder.jpeg";
+import coverArduino from "./imgs/coverArduino.jpg";
+
 
 const ProjData = [
   {
@@ -71,7 +72,7 @@ const ProjData = [
             </p>
           </Col>
           <Col md={6} className="modal-img">
-            <img src={hil_CANFrame} alt="Standard CAN Frame" className="img-hil-canframe" />
+            <img src={hilCANFrame} alt="Standard CAN Frame" className="img-hil-canframe" />
             <figcaption className="mx-auto italics">Standard CAN Frame</figcaption>
           </Col>
         </Row>
@@ -203,7 +204,7 @@ const ProjData = [
         </Row>
         <Row>
           <Col className="modal-img">
-            <img src={hil_mounts} alt="Cylinder Mount" className="img-centered img-hil-mounts" />
+            <img src={hilMounts} alt="Cylinder Mount" className="img-centered img-hil-mounts" />
             <figcaption>
               3D Printed mounts for pneumatic cylinders, proximity sensors, latch, and motor
             </figcaption>
@@ -227,7 +228,7 @@ const ProjData = [
         <Row>
           <Col className="modal-img">
             <img
-              src={hil_cad}
+              src={hilCad}
               alt="Full 3D Model of the Fixture"
               class="img-centered img-hil-cad"
             />
@@ -313,8 +314,8 @@ const ProjData = [
         </Row>
         <Row>
           <Col md={5} className="modal-img">
-            <img src={hil_arduinocircuit} alt="Arduino Circuit" />
-            <img src={hil_arduinobread} alt="Arduino Breadboard Setup" />
+            <img src={hilArduinoCircuit} alt="Arduino Circuit" />
+            <img src={hilArduinoBread} alt="Arduino Breadboard Setup" />
             <figcaption>HIL Arduino Circuit and Breadboard Setup</figcaption>
           </Col>
           <Col md={7}>
@@ -379,7 +380,7 @@ const ProjData = [
         </Row>
         <Row>
           <Col className="modal-img">
-            <img src={cover_hil} alt="Final Product" className="img-centered img-hil-final" />
+            <img src={coverHil} alt="Final Product" className="img-centered img-hil-final" />
           </Col>
         </Row>
       </Container>
@@ -409,7 +410,7 @@ const ProjData = [
         <Row>
           <Col className="modal-img">
             <img
-              src={arduino_initial}
+              src={arduinoInitial}
               alt="Intial Arduino Setup"
               className="img-centered img-arduino-initial"
             />
@@ -437,15 +438,15 @@ const ProjData = [
         </Row>
         <Row>
           <Col md={6} className="modal-img">
-            <img src={arduino_cad} alt="Arduino CAD" />
+            <img src={arduinoCad} alt="Arduino CAD" />
           </Col>
           <Col md={6} className="modal-img">
-            <img src={arduino_solder} alt="Arduino Soldered to New Enclosure" />
+            <img src={arduinoSolder} alt="Arduino Soldered to New Enclosure" />
           </Col>
         </Row>
         <Row>
           <Col className="modal-img">
-            <img src={cover_arduino} alt="Arduino Final Implementation" />
+            <img src={coverArduino} alt="Arduino Final Implementation" />
           </Col>
         </Row>
       </Container>
@@ -480,7 +481,7 @@ const ProjData = [
             </p>
           </Col>
           <Col md={4} className="modal-img">
-            <img src={quad_circuitschem} alt="Quadcopter Electricla Schematic" />
+            <img src={quadCircuitSchem} alt="Quadcopter Electricla Schematic" />
             <figcaption>Sourced Arduino Quadcopter Circuit</figcaption>
           </Col>
         </Row>
@@ -498,7 +499,7 @@ const ProjData = [
         <Row>
           <Col md={6} className="modal-img">
             <img
-              src={quad_components}
+              src={quadComponents}
               alt="Quadcopter Components"
               className="img-quad-components"
             />
@@ -538,7 +539,7 @@ const ProjData = [
         <Row>
           <h3>Assembly</h3>
           <Col md={4} className="modal-img">
-            <img src={quad_motorarm} alt="Circuit Board Soldering" />
+            <img src={quadMotorArm} alt="Circuit Board Soldering" />
             <figcaption>Brushless Motor Mounted onto Quadcopter Arm</figcaption>
           </Col>
           <Col md={8} className="modal-flex">
@@ -568,7 +569,7 @@ const ProjData = [
             </p>
           </Col>
           <Col md={4} className="modal-img">
-            <img src={quad_circuitboard} alt="Circuit Board Soldering" />
+            <img src={quadCircuitBoard} alt="Circuit Board Soldering" />
             <figcaption>Connection between Arduino and Gryo</figcaption>
           </Col>
         </Row>
@@ -632,7 +633,7 @@ const ProjData = [
         <Row>
           <Col className="modal-img">
             <img
-              src={cover_quad}
+              src={coverQuad}
               alt="Final Quadcopter Assembly"
               className="img-centered img-quad-final"
             />
@@ -660,10 +661,10 @@ const ProjData = [
         </Row>
         <Row>
           <Col md={4} className="modal-img">
-            <img src={bracket_display} alt="Bracket Drawing" />
+            <img src={bracketDisplay} alt="Bracket Drawing" />
           </Col>
           <Col md={8} className="modal-img">
-            <img src={cover_bracket} alt="Bracket on Prototype" />
+            <img src={coverBracket} alt="Bracket on Prototype" />
           </Col>
         </Row>
       </Container>
@@ -748,7 +749,7 @@ const ProjData = [
             </p>
           </Col>
           <Col md={4} className="modal-img">
-            <img src={cftracker_graph1} alt="Graph" />
+            <img src={cftrackerGraph1} alt="Graph" />
             <figcaption>
               Change in global surface temperature (annual average) as observed and simulated using
               human & natural and natural factors
@@ -757,7 +758,7 @@ const ProjData = [
         </Row>
         <Row>
           <Col md={6} className="modal-img">
-            <img src={cftracker_graph2} alt="Near Linear" />
+            <img src={cftrackerGraph2} alt="Near Linear" />
             <figcaption>
               Figure 2: Near-linear relationship between cumulative CO2 emissions and the increase
               in global surface temperature.
@@ -887,7 +888,7 @@ const ProjData = [
             </p>
           </Col>
           <Col md={6} className="modal-img">
-            <img src={cftracker_flow} alt="GreenFoot Flow Chart" className="img-gf-flow" />
+            <img src={cftrackerFlow} alt="GreenFoot Flow Chart" className="img-gf-flow" />
             <figcaption>GreenFoot Web Application Flow Chart</figcaption>
           </Col>
         </Row>
@@ -1013,25 +1014,25 @@ const ProjData = [
         </Row>
         <Row>
           <Col md={6} className="modal-img">
-            <img src={cftracker_input} alt="Input Page" />
+            <img src={cftrackerInput} alt="Input Page" />
             <figcaption>Input Page</figcaption>
           </Col>
           <Col md={6} className="modal-img">
-            <img src={cftracker_friends} alt="Friends Page" />
+            <img src={cftrackerFriends} alt="Friends Page" />
             <figcaption>Friends Page</figcaption>
           </Col>
           <Col md={6} className="modal-img">
-            <img src={cftracker_rshow} alt="Race List Page" />
+            <img src={cftrackerShow} alt="Race List Page" />
             <figcaption>Race List Page</figcaption>
           </Col>
           <Col md={6} className="modal-img">
-            <img src={cftracker_races} alt="Races Page" />
+            <img src={cftrackerRaces} alt="Races Page" />
             <figcaption>Races Page</figcaption>
           </Col>
         </Row>
         <Row>
           <Col className="modal-img">
-            <img src={cover_cftracker} alt="Profile Page" className="img-centered img-gf-final" />
+            <img src={coverCftracker} alt="Profile Page" className="img-centered img-gf-final" />
             <figcaption>Profile Page</figcaption>
           </Col>
         </Row>
@@ -1073,7 +1074,7 @@ const ProjData = [
           </Col>
         </Row>
         <Row>
-          <img src={uwaft_group} alt="test" className="img-centered" />
+          <img src={uwaftGroup} alt="test" className="img-centered" />
         </Row>
       </Container>
     ),

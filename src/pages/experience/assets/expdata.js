@@ -1,8 +1,8 @@
-import IMLogo from '../../assets/logos/IMLogo.png'
-import ElectransLogo from '../../assets/logos/ElectransLogo.png'
-import GrantMatchLogo from '../../assets/logos/GrantmatchLogo.png'
-import UwaftLogo from '../../assets/logos/UwaftLogo.jpg'
-import FLogo from '../../assets/logos/416Logo.jpg'
+import IMLogo from './logos/IMLogo.png'
+import ElectransLogo from './logos/ElectransLogo.png'
+import GrantMatchLogo from './logos/GrantmatchLogo.png'
+import UwaftLogo from './logos/UwaftLogo.jpg'
+import FLogo from './logos/416Logo.jpg'
 
 const ExpData = [
     {
