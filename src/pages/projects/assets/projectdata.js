@@ -32,7 +32,7 @@ const ProjData = [
   {
     id: "1",
     title: "Hardware In Loop Testing Fixture",
-    category_ids: [10, 20],
+    category_ids: ["Mechanical", "Electrical"],
     date: "Winter 2022",
     skills: [
       "SolidWorks",
@@ -389,7 +389,7 @@ const ProjData = [
   {
     id: "2",
     title: "Arduino Enclosure",
-    category_ids: [10],
+    category_ids: ["Mechanical"],
     date: "Winter 2022",
     skills: ["SolidWorks", "Sourcing Components", "Soldering"],
     body: (
@@ -455,7 +455,7 @@ const ProjData = [
   {
     id: "3",
     title: "Quadcopter Powered by Arduino",
-    category_ids: [20, 30],
+    category_ids: ["Electrical", "Software"],
     date: "Summer 2021",
     skills: ["Arduino & C++", "Soldering", "Design", "Sourcing Components"],
     body: (
@@ -645,7 +645,7 @@ const ProjData = [
   {
     id: "4",
     title: "Sheet Metal Brackets",
-    category_ids: [10],
+    category_ids: ["Mechanical"],
     date: "Winter 2022",
     skills: ["SolidWorks (Sheet Metal Feature)", "Engineering Drawings"],
     body: (
@@ -673,7 +673,7 @@ const ProjData = [
   {
     id: "5",
     title: "Carbon Greenfoot Tracker",
-    category_ids: [30],
+    category_ids: ["Software"],
     date: "Winter 2021",
     skills: ["Web Development", "Django (Python)", "Javascript", "HTML & CSS", "Git"],
     body: (
@@ -1042,7 +1042,7 @@ const ProjData = [
   {
     id: "6",
     title: "Sensor Diagnostics Algorithm",
-    category_ids: [30],
+    category_ids: ["Software"],
     date: "Summer 2020",
     skills: ["Robotics Operating Software (ROS)", "C++", "CAN", "Git"],
     body: (
@@ -1082,7 +1082,7 @@ const ProjData = [
   {
     id: "7",
     title: "This Website",
-    category_ids: [30],
+    category_ids: ["Software"],
     date: "Ongoing Improvements",
     skills: ["ReactJS", "HTML & CSS", "Git", "UI Design"],
     body: (
@@ -1115,7 +1115,7 @@ const ProjData = [
   {
     id: "8",
     title: "High School Chapel Speech",
-    category_ids: [40],
+    category_ids: ["Other"],
     date: "Winter 2019",
     skills: [],
     body: (
