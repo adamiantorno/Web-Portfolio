@@ -1,6 +1,10 @@
-import React from 'react';
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
+
+import "./landing.scss";
 
 export default function Landing() {
 

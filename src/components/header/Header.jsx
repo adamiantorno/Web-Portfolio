@@ -1,9 +1,10 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import AdamIantorno_Web_Resume from '../assets/files/AdamIantorno_Web_Resume.pdf';
+import { Navbar, Nav, Container } from "react-bootstrap";
+
+import "./header.scss";
 
 
 export default function Header() {
@@ -20,16 +21,16 @@ export default function Header() {
   window.addEventListener("scroll", scrolling);
 
   return (
-    <Navbar 
-        fixed='top'
-        expand='md'
-        variant='dark'
-        className={navColor ? "scrollbar" : "navbar"}
+    <Navbar
+      fixed='top'
+      expand='md'
+      variant='dark'
+      className={navColor ? "scrollbar" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/">ADAM IANTORNO</Navbar.Brand>
         <Navbar.Toggle
-            aria-controls='responsive-navbar-nav'
+          aria-controls='responsive-navbar-nav'
         ></Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className='ms-auto'>
@@ -49,11 +50,11 @@ export default function Header() {
               <Link className='nav-link' to='projects' spy={true} smooth={true} offset={0} duration={400}>Projects</Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link href={AdamIantorno_Web_Resume}>Resume</Nav.Link>
-            </Nav.Item>
+            {/* <Nav.Item>
+              <Nav.Link href={AdamIantornoWebResume}>Resume</Nav.Link>
+            </Nav.Item> */}
 
-            <span className='nav-indicator'></span>     
+            <span className='nav-indicator'></span>
           </Nav>
         </Navbar.Collapse>
       </Container>
