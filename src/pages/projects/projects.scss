@@ -1,40 +1,29 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 @import "../../scss/variables";
 @import "../../scss/styles";
 
 .filter {
+    margin-bottom: 10px;
+
     @media screen and (max-width: $mobile-width) {
         display: flex;
         flex-direction: column;
     }
 
-    &-container {
-        margin-bottom: 20px;
-        display: flex;
-    }
-
-    &-title {
-        color: white;
-        font-size: 2rem;
-        padding: 0px 20px 0px 0px;
-    }
-
     &-button {
         color: $primary-colour-5;
         font-size: 2rem;
-        font-weight: 500    ;
+        font-weight: 500;
         background: none;
         border: none;
         border-radius: 5px;
         padding: 2px 20px 2px 25px;
+        margin: 0 8px;
 
         @media screen and (max-width: $mobile-width) {
             font-size: 1.5rem;
             margin: auto;
-        }
-
-        &::before {
-            content: "//";
-            padding-right: 16px;
         }
 
         &:hover {
@@ -45,6 +34,7 @@
 
         &.active {
             background-color: #fff;
+            font-weight: 550;
             color: $primary-colour-1;
         }
     }

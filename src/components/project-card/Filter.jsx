@@ -1,3 +1,5 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 import React, { useEffect } from 'react';
 import { Col } from 'react-bootstrap';
 
@@ -9,6 +11,7 @@ export default function Filter({
     activeGenre, 
     setActiveGenre
 }) {
+    
     useEffect(() => {
         if (activeGenre === "All") {
             setFiltered(projects);
@@ -21,11 +24,12 @@ export default function Filter({
     }, [activeGenre, projects, setFiltered]);    
 
 return (
-    <Col className='filter'>
+    <Col className="filter">
         {categories.map((cat) => (
             <button
                 key={cat}
-                className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
+                type="button"
+                className={activeGenre === cat.id ? "filter-button active" : "filter-button"}
                 onClick={() => setActiveGenre(cat)}
             >
                 {cat}
