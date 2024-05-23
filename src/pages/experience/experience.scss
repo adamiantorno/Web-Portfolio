@@ -1,3 +1,5 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 @import "../../scss/variables";
 @import "../../scss/styles";
 
@@ -43,8 +45,9 @@
         padding: 10px 15px;
         text-align: right;
         color: $primary-colour-3;
-        border-radius: 5px;
+        border-radius: 5px 0 0 5px !important;
         transition: 0.5s;
+        line-height: 12px;
 
         @media screen and (max-width: $mobile-width) {
             text-align: center;
@@ -58,8 +61,16 @@
     
         &-active, &:hover {
             @extend .exp-button;
-            background-color: $primary-colour-2;
-            color: #fff;
+            background-color: $primary-colour-6;
+            color: $primary-colour-1;
+        }
+
+        h4 {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-size: 0.8rem;
         }
     }
 
@@ -68,10 +79,9 @@
         top: 0;
         right: 0;
         z-index: 10;
-        width: 12px;
+        width: 6px;
         height: 19.5%;
-        border-radius: 50% 0px 0px 50%;
-        background: white;
+        background: $primary-colour-1;
         transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         transition-delay: 0.1s;
 
@@ -83,6 +93,16 @@
             height: 15px;
             max-width: 130px;
             border-radius: 50% 50% 0 0;
+        }
+
+        &-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            z-index: 5;
+            background-color: $primary-colour-5;
         }
     }
 
