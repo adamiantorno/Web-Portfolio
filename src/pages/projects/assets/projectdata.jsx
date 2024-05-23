@@ -1,3 +1,5 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 import { Container, Col, Row, Table } from "react-bootstrap";
 
 import uwaftGroup from "./imgs/uwaftGroup.jpg";
@@ -29,6 +31,24 @@ import coverArduino from "./imgs/coverArduino.jpg";
 
 
 const ProjData = [
+  {
+    id: "9",
+    title: "Autonomous Robot Arm",
+    category_ids: ['Mechanical', 'Electrical', 'Software'],
+    date: "Spring 2023",
+    skills: [
+      'Arduino',
+      'Python (OpenCV)',
+      'Motor Control',
+      'SolidWorks',
+      '3D Printing',
+    ],
+    body: (
+      <Container>
+        This is the project card for 380
+      </Container>
+    )
+  },
   {
     id: "1",
     title: "Hardware In Loop Testing Fixture",

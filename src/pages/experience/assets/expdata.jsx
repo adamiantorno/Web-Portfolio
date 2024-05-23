@@ -1,3 +1,5 @@
+// Software Developed by Adam Iantorno for Portfolio Website 2024
+
 import IMLogo from './logos/IMLogo.png'
 import ElectransLogo from './logos/ElectransLogo.png'
 import GrantMatchLogo from './logos/GrantmatchLogo.png'
