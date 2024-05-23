@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { Modal, Button, Col } from 'react-bootstrap';
 
-export default function ProjectCard({ item }) {
+import { motion } from 'framer-motion';
+
+export default function ProjectCard({ key, item }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <Col md={4}>
+    <motion.div
+      className="col-md-4"
+      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0 }}
+      exit={{ scale: 0, transition: { duration: 0.1 } }}
+      transition={{ duration: 0.5 }}
+      layout
+      key={key}
+    >
       <button onClick={handleShow} className={"card-main card-" + item.id}>
         <div className="card-img"></div>
         <div className="card-img-hovered"></div>
@@ -42,6 +52,6 @@ export default function ProjectCard({ item }) {
           </Button>
         </Modal.Footer>
       </Modal>
-    </Col>
+    </motion.div>
   );
 }

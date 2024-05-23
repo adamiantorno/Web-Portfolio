@@ -1,36 +1,36 @@
 import React, { useEffect } from 'react';
 import { Col } from 'react-bootstrap';
 
+const categories = ["All", "Mechanical", "Electrical", "Software", "Other"]
 
-export default function Filter({categories, projects, setFiltered, activeGenre, setActiveGenre}) {
-    
+export default function Filter({
+    projects, 
+    setFiltered, 
+    activeGenre, 
+    setActiveGenre
+}) {
     useEffect(() => {
-        if (activeGenre === 0){
+        if (activeGenre === "All") {
             setFiltered(projects);
-            return;
+        } else {
+            const filtered = projects.filter((project) => 
+                project.category_ids.includes(activeGenre)
+            );
+            setFiltered(filtered);
         }
-        const filtered = projects.filter((project) => 
-            project.category_ids.includes(activeGenre)
-        );
-        //console.log(filtered);
-        setFiltered(filtered);
     }, [activeGenre, projects, setFiltered]);    
 
 return (
     <Col className='filter'>
-        <span className='filter-title'>Filter by</span>
-        {categories.map((cat) => {
-            return (
-
-                <button
-                  key={cat.id}
-                  className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
-                  onClick={() => setActiveGenre(cat.id)}
-                >
-                  {cat.name}
-                </button>
-            );
-        })}  
+        {categories.map((cat) => (
+            <button
+                key={cat}
+                className={activeGenre === cat.id ? "active filter-button" : "filter-button"}
+                onClick={() => setActiveGenre(cat)}
+            >
+                {cat}
+            </button>
+        ))} 
     </Col>
 )
 }
